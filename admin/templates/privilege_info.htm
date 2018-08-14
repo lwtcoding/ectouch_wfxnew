@@ -1,0 +1,554 @@
+<!-- $Id: privilege_info.htm 16616 2009-08-27 01:56:35Z liuhui $ -->
+{include file="pageheader.htm"}
+{insert_scripts files="validator.js,../js/transport.js,../js/region.js"}
+<div class="main-div">
+<form name="theForm" method="post" enctype="multipart/form-data" onsubmit="return validate();">
+    <fieldset style="border:1px solid #DDEEF2;background: #fff;">
+<table width="100%">
+  <tr>
+    <td class="label">{$lang.user_name}</td>
+    <td>
+      <input type="text" name="user_name" maxlength="20" value="{$user.user_name|escape}" size="34"/>{$lang.require_field}</td>
+  </tr>
+  <tr>
+    <td class="label">{$lang.email}</td>
+    <td>
+      <input type="text" name="email" value="{$user.email|escape}" size="34" />{$lang.require_field}</td>
+  </tr>
+ {if $action eq "add"}
+  <tr>
+    <td class="label">{$lang.password}</td>
+    <td>
+      <input type="password" name="password" maxlength="32" size="34" />{$lang.require_field}</td>
+  </tr>
+  <tr>
+    <td class="label">{$lang.pwd_confirm}</td>
+    <td>
+      <input type="password" name="pwd_confirm" maxlength="32" size="34" />{$lang.require_field}</td>
+  </tr>
+  {/if}
+  {if $action neq "add"}
+  <tr>
+    <td class="label">
+      <a href="javascript:showNotice('passwordNotic');" title="{$lang.form_notice}">
+        <img src="images/notice.gif" width="16" height="16" border="0" alt="{$lang.form_notice}"></a>{$lang.old_password}</td>
+    <td>
+      <input type="password" name="old_password" size="34" />{$lang.require_field}
+      <br /><span class="notice-span" {if $help_open}style="display:block" {else} style="display:none" {/if} id="passwordNotic">{$lang.password_notic}</span></td>
+  </tr>
+  <tr>
+    <td class="label">{$lang.new_password}</td>
+    <td>
+      <input type="password" name="new_password" maxlength="32" size="34" />{$lang.require_field}</td>
+  </tr>
+  <tr>
+    <td class="label">{$lang.pwd_confirm}</td>
+    <td>
+      <input type="password" name="pwd_confirm" value="" size="34" />{$lang.require_field}</td>
+  </tr>
+  {if $user.agency_name}
+  <tr>
+    <td class="label">{$lang.agency}</td>
+    <td>{$user.agency_name}</td>
+  </tr>
+  {/if}
+  {/if}
+   {if $select_role}
+    <tr>
+   <td class="label">{$lang.select_role}</td>
+    <td>
+      <select name="select_role">
+        <option value="">{$lang.select_please}</option>
+        {foreach from=$select_role item=list}
+        <option value="{$list.role_id}" {if $list.role_id eq $user.role_id} selected="selected" {/if} >{$list.role_name}</option>
+        {/foreach}
+      </select>
+    </td>
+  </tr>
+  {/if}
+  {if $action eq "modif"}
+  <tr>
+  <td align="left" class="label">{$lang.edit_navi}</td>
+  <td>
+      <table style="width:300px" cellspacing="0">
+        <tr>
+        <td valign="top">
+          <input type="hidden" name="nav_list[]" id="nav_list[]" />
+          <select name="menus_navlist" id="menus_navlist" multiple="true" style="width: 120px; height: 180px" onclick="setTimeout('toggleButtonSatus()', 1);">
+          {html_options options=$nav_arr}
+          </select></td>
+        <td align="center">
+         <input type="button" class="button" value="{$lang.move_up}" id="btnMoveUp" onclick="moveOptions('up')" disabled="true" />
+         <input type="button" class="button" value="{$lang.move_down}" id="btnMoveDown" onclick="moveOptions('down')" disabled="true" />
+         <input type="button" value="{$lang.add_nav}" id="btnAdd" onclick="JavaScript:addItem(theForm.all_menu_list,theForm.menus_navlist); this.disabled=true; " class="button" disabled="true" /><br />
+         <input type="button" value="{$lang.remove_nav}" onclick="JavaScript:delItem(theForm.menus_navlist); toggleButtonSatus()" class="button" disabled="true" id="btnRemove" /></td>
+        <td>
+          <select id="all_menu_list" name="all_menu_list" size="15" multiple="true" style="width:150px; height: 180px" onchange="toggleAddButton()">
+            {foreach from=$menus item=menu key=key}
+              {if $key neq "admin_home" && $menus.$key}
+              <option value="" style="font-weight:bold;">{$lang.$key}</option>
+              {foreach from=$menus.$key item=item key=k}
+              <option value="{$item}">&nbsp;&nbsp;&nbsp;&nbsp;{$lang.$k}</option>
+              {/foreach}
+              {/if}
+             {/foreach}
+           </select></td>
+        </tr>
+      </table></td>
+  </tr>
+  {/if}
+    <tr>
+        <td class="label">{$lang.proxy_user}</td>
+        <td>
+            <select name="proxy_user" onchange="select_proxy(this)">
+                {html_options options=$lang.proxy_user_option selected=$user.proxy_user}
+            </select>
+            {$lang.require_field}
+        </td>
+    </tr>
+  <!--<tr>-->
+    <!--<td colspan="2" align="center">-->
+      <!--<input type="submit" value="{$lang.button_submit}" class="button" />&nbsp;&nbsp;&nbsp;-->
+      <!--<input type="reset" value="{$lang.button_reset}" class="button" />-->
+      <!--<input type="hidden" name="act" value="{$form_act}" />-->
+      <!--<input type="hidden" name="token" value="{$token}" />-->
+      <!--<input type="hidden" name="id" value="{$user.user_id}" /></td>-->
+  <!--</tr>-->
+</table>
+    </fieldset>
+    <div id="proxy_div" {if $user.proxy_user eq 0}style="display:none;"{/if}>
+    <fieldset style="border:1px solid #DDEEF2;background: #fff;">
+        <legend style="background:#FFF">{$lang.proxy_vip_level}:</legend>
+        <table style="width:600px" align="center">
+            <tr>
+                <td class="label">{$lang.proxy_vip_level}:</td>
+                <td><select name="proxy_vip_user_rank">
+                    <option value="0">{$lang.not_special_rank}</option>
+                    {html_options options=$special_ranks selected=$user.proxy_vip_user_rank}
+                </select></td>
+            </tr>
+            <tr>
+                <td class="label">{$lang.proxy_default_label}:</td>
+                <td><select name="proxy_default">
+                    {html_options options=$lang.proxy_default_options selected=$user.proxy_default}
+                </select></td>
+            </tr>
+        </table >
+    </fieldset>
+    <fieldset style="border:1px solid #DDEEF2;background: #fff;">
+        <legend style="background:#FFF">{$lang.proxy_region}:</legend>
+        <table style="width:600px" align="center">
+            <tr>
+                <td id="regionCell">
+                    {foreach from=$regions item=region key=id}
+                    <input type="checkbox" name="proxy_region[]" value="{$id}" checked="true" onclick='rmRegion(this)' /> {$region}&nbsp;&nbsp;
+                    {/foreach}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span  style="vertical-align: top">{$lang.label_country} </span>
+                    <select name="country" id="selCountries" onchange="region.changed(this, 1, 'selProvinces')" size="10" style="width:80px">
+                        {foreach from=$countries item=country}
+                        <option value="{$country.region_id}">{$country.region_name|escape:html}</option>
+                        {/foreach}
+                    </select>
+                    <span  style="vertical-align: top">{$lang.label_province} </span>
+                    <select name="province" id="selProvinces" onchange="region.changed(this, 2, 'selCities')" size="10" style="width:80px">
+                        <option value=''>{$lang.select_please}</option>
+                    </select>
+                    <span  style="vertical-align: top">{$lang.label_city} </span>
+                    <select name="city" id="selCities" onchange="region.changed(this, 3, 'selDistricts')" size="10" style="width:80px">
+                        <option value=''>{$lang.select_please}</option>
+                    </select>
+                    <span  style="vertical-align: top">{$lang.label_district}</span>
+                    <select name="district" id="selDistricts" size="10" style="width:130px">
+                        <option value=''>{$lang.select_please}</option>
+                    </select>
+                    <span  style="vertical-align: top"><input type="button" value="+" class="button" onclick="addRegion()" /></span>
+                </td>
+            </tr>
+        </table >
+    </fieldset>
+
+    <input type="hidden" name="proxy_user_id" value="{$user.proxy_user_id}" />
+    <fieldset style="border:1px solid #DDEEF2;background: #fff;">
+        <legend style="background:#FFF">{$lang.associate_user_label}:</legend>
+        <table width="100%" >
+            {if $associate_user.user_id}
+            <tr>
+                <td class="label">{$lang.associate_user_label}:</td>
+                <td><a href="users.php?act=edit&id={$associate_user.user_id}">{$associate_user.user_name}</a></td>
+            </tr>
+            {/if}
+            {if !$associate_user.user_id}
+            <tr>
+                <td class="label">{$lang.username}:</td>
+                <td><input type="text" name="associate_username" maxlength="60" value="{$associate_user.user_name}" />{$lang.require_field}</td>
+            </tr>
+            <tr>
+                <td class="label">{$lang.nickname}:</td>
+                <td><input type="text" name="associate_nick_name" maxlength="60" value="{$associate_user.nick_name}" />{$lang.require_field}</td>
+            </tr>
+            <tr>
+                <td class="label">{$lang.identity}:</td>
+                <td><input type="text" name="associate_identity" maxlength="60" value="{$associate_user.identity}" />{$lang.require_field}</td>
+            </tr>
+
+            <tr>
+                <td class="label">
+                    {$lang.country}
+                </td>
+                <td>
+                    <select name="associate_country" id="selCountries1" onchange="region.changed(this, 1, 'selProvinces1')">
+                        <option value=''>{$lang.select_please}</option>
+                        {foreach from=$countries item=region}
+                        <option value="{$region.region_id}" {if $region.region_id eq $associate_user.country}selected{/if}>{$region.region_name}</option>
+                        {/foreach}
+                    </select>
+                    {$lang.require_field}
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    {$lang.province}
+                </td>
+                <td>
+                    <select name="associate_province" id="selProvinces1" onchange="region.changed(this, 2, 'selCities1')">
+                        <option value=''>{$lang.select_please}</option>
+                        {foreach from=$provinces item=region}
+                        <option value="{$region.region_id}" {if $region.region_id eq $associate_user.province}selected{/if}>{$region.region_name}</option>
+                        {/foreach}
+                    </select>
+                    {$lang.require_field}
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    {$lang.city}
+                </td>
+                <td>
+                    <select name="associate_city" id="selCities1" onchange="region.changed(this, 3, 'selDistricts1')">
+                        <option value=''>{$lang.select_please}</option>
+                        {foreach from=$cities item=region}
+                        <option value="{$region.region_id}" {if $region.region_id eq $associate_user.city}selected{/if}>{$region.region_name}</option>
+                        {/foreach}
+                    </select>
+                    {$lang.require_field}
+                </td>
+            </tr>
+            <tr id="selDistricts1_box">
+                <td class="label">
+                        县/镇
+                </td>
+                <td>
+                    <select name="associate_districts" id="selDistricts1">
+                        <option value=''>{$lang.select_please}</option>
+                        {foreach from=$districts item=region}
+                        <option value="{$region.region_id}" {if $region.region_id eq $associate_user.districts}selected{/if}>{$region.region_name}</option>
+                        {/foreach}
+                    </select>
+                    {$lang.require_field}
+                </td>
+            </tr>
+            <tr>
+                <td class="label">{$lang.address}:</td>
+                <td><input type="text" name="associate_address" maxlength="60" value="{$associate_user.address}" />{$lang.require_field}</td>
+            </tr>
+            <tr>
+                <td class="label">{$lang.mobile_phone}:</td>
+                <td><input type="text" name="associate_mobile_phone" maxlength="60" value="{$associate_user.mobile_phone}" />{$lang.require_field}</td>
+            </tr>
+            <tr>
+                <td class="label">{$lang.email}:</td>
+                <td><input type="text" name="associate_email" maxlength="60" size="40" value="{$associate_user.email}" />{$lang.require_field}</td>
+            </tr>
+
+            <tr>
+                <td class="label">{$lang.password}:</td>
+                <td><input type="password" name="associate_password" maxlength="20" size="20" />{$lang.require_field}</td>
+            </tr>
+            <tr>
+                <td class="label">{$lang.confirm_password}:</td>
+                <td><input type="password" name="associate_confirm_password" maxlength="20" size="20" />{$lang.require_field}</td>
+            </tr>
+
+            <tr>
+                <td class="label">{$lang.user_rank}:</td>
+                <td><select name="associate_user_rank">
+                    <option value="0">{$lang.not_special_rank}</option>
+                    {html_options options=$special_ranks selected=$associate_user.user_rank}
+                </select></td>
+            </tr>
+            <tr>
+                <td class="label">{$lang.gender}:</td>
+                <td>{html_radios name="associate_sex" options=$lang.sex checked=$associate_user.sex }</td>
+            </tr>
+            <tr>
+                <td class="label">{$lang.birthday}:</td>
+                <td>{html_select_date field_order="YMD" prefix="associate_birthday" time=$associate_user.birthday start_year="-60" end_year="+1" display_days=true month_format="%m"}</td>
+            </tr>
+            <tr style="display: none">
+                <td class="label">{$lang.credit_line}:</td>
+                <td><input name="associate_credit_line" type="text" id="credit_line" value="{$associate_user.credit_line}" size="10" /></td>
+            </tr>
+            {foreach from=$extend_info_list item=field}
+            <tr>
+                <td class="label">{$field.reg_field_name}:</td>
+                <td>
+                    <input name="extend_field{$field.id}" type="text" size="40" class="inputBg" value="{$field.content}"/>
+                </td>
+            </tr>
+            {/foreach}
+
+            {/if}
+
+        </table>
+    </fieldset>
+    </div>
+
+    <fieldset style="border:1px solid #DDEEF2;background: #fff;">
+    <table >
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="{$lang.button_submit}" class="button" />&nbsp;&nbsp;&nbsp;
+                <input type="reset" value="{$lang.button_reset}" class="button" />
+                <input type="hidden" name="act" value="{$form_act}" />
+                <input type="hidden" name="token" value="{$token}" />
+                <input type="hidden" name="id" value="{$user.user_id}" /></td>
+            </td>
+        </tr>
+    </table>
+    </fieldset>
+
+</form>
+</div>
+{insert_scripts files="../js/utils.js,validator.js"}
+<script language="JavaScript">
+    region.isAdmin = true;
+var action = "{$action}";
+//  <!--
+{literal}
+document.forms['theForm'].elements['user_name'].focus();
+onload = function()
+{
+    var selCountry = document.forms['theForm'].elements['country'];
+    if (selCountry.selectedIndex <= 0)
+    {
+        selCountry.selectedIndex = 0;
+    }
+
+    region.loadProvinces(selCountry.options[selCountry.selectedIndex].value);
+    // 开始检查订单
+    startCheckOrder();
+}
+function select_proxy(elem) {
+    var is_proxy = elem.value;
+    var proxy_div = document.getElementById('proxy_div');
+    if (is_proxy == 1) {
+        proxy_div.style.display='';
+    } else {
+        proxy_div.style.display='none';
+    }
+}
+/**
+ * 切换增加按钮的状态
+ */
+function toggleAddButton()
+{
+    var sel = document.getElementById("all_menu_list");
+    document.getElementById("btnAdd").disabled = (sel.selectedIndex > -1) ? false : true;
+}
+
+/**
+ * 切换移出，上移，下移按钮状态
+ */
+function toggleButtonSatus()
+{
+    var sel = document.getElementById("menus_navlist");
+    document.getElementById("btnRemove").disabled = (sel.selectedIndex > -1) ? false : true;
+    document.getElementById("btnMoveUp").disabled = (sel.selectedIndex > -1) ? false : true;
+    document.getElementById("btnMoveDown").disabled = (sel.selectedIndex > -1) ? false : true;
+}
+
+/**
+ * 添加一个区域
+ */
+function addRegion()
+{
+    var selCountry  = document.forms['theForm'].elements['country'];
+    var selProvince = document.forms['theForm'].elements['province'];
+    var selCity     = document.forms['theForm'].elements['city'];
+    var selDistrict = document.forms['theForm'].elements['district'];
+    var regionCell  = document.getElementById("regionCell");
+
+    if (selDistrict.selectedIndex > 0)
+    {
+        regionId = selDistrict.options[selDistrict.selectedIndex].value;
+        regionName = selDistrict.options[selDistrict.selectedIndex].text;
+    }
+    else
+    {
+        if (selCity.selectedIndex > 0)
+        {
+            regionId = selCity.options[selCity.selectedIndex].value;
+            regionName = selCity.options[selCity.selectedIndex].text;
+        }
+        else
+        {
+            if (selProvince.selectedIndex > 0)
+            {
+                regionId = selProvince.options[selProvince.selectedIndex].value;
+                regionName = selProvince.options[selProvince.selectedIndex].text;
+            }
+            else
+            {
+                if (selCountry.selectedIndex >= 0)
+                {
+                    regionId = selCountry.options[selCountry.selectedIndex].value;
+                    regionName = selCountry.options[selCountry.selectedIndex].text;
+                }
+                else
+                {
+                    return;
+                }
+            }
+        }
+    }
+
+    // 检查该地区是否已经存在
+    exists = false;
+    for (i = 0; i < document.forms['theForm'].elements.length; i++)
+    {
+        if (document.forms['theForm'].elements[i].type=="checkbox")
+        {
+            if (document.forms['theForm'].elements[i].value == regionId)
+            {
+                exists = true;
+                alert(region_exists);
+            }
+        }
+    }
+    // 创建checkbox
+    if (!exists)
+    {
+        regionCell.innerHTML = "<input type='checkbox' name='proxy_region[]' value='" + regionId + "' checked='true' onclick='rmRegion(this)' /> " + regionName + "&nbsp;&nbsp;";
+    }
+}
+
+function rmRegion(elem) {
+    var regionCell  = document.getElementById("regionCell");
+    regionCell.innerHTML = '';
+
+}
+/**
+ * 移动选定的列表项
+ */
+function moveOptions(direction)
+{
+    var sel = document.getElementById('menus_navlist');
+    if (sel.selectedIndex == -1)
+    {
+        return;
+    }
+
+    len = sel.length
+    for (i = 0; i < len; i++)
+    {
+        if (sel.options[i].selected)
+        {
+            if (i == 0 && direction == 'up')
+            {
+                return;
+            }
+
+            newOpt = sel.options[i].cloneNode(true);
+
+            sel.removeChild(sel.options[i]);
+            tarOpt = (direction == "up") ? sel.options[i-1] : sel.options[i+1]
+            sel.insertBefore(newOpt, tarOpt);
+            newOpt.selected = true;
+            break;
+        }
+    }
+}
+
+/**
+* 检查表单输入的数据
+*/
+function validate()
+{
+  get_navlist();
+
+  validator = new Validator("theForm");
+  validator.password = function (controlId, msg)
+  {
+    var obj = document.forms[this.formName].elements[controlId];
+    obj.value = Utils.trim(obj.value);
+    if (!(obj.value.length >= 6 && /\d+/.test(obj.value) && /[a-zA-Z]+/.test(obj.value)))
+    {
+      this.addErrorMsg(msg);
+    }
+
+  }
+
+  validator.required("user_name", user_name_empty);
+  validator.required("email", email_empty, 1);
+  validator.isEmail("email", email_error);
+    var proxy_user  = document.forms['theForm'].elements['proxy_user'].value;
+    var associate_username  = document.forms['theForm'].elements['associate_username'];
+    // console.log(proxy_user, associate_username)
+    if (proxy_user!=0 && associate_username!=undefined) {
+
+
+        validator.required("associate_username",  no_username);
+        validator.required("associate_password", no_password);
+
+        validator.required("associate_nick_name", no_nickname);
+        validator.required("associate_identity", no_identity);
+        validator.required("associate_address", no_address);
+        validator.required("associate_mobile_phone", no_mobile_phone);
+        validator.required("associate_country", no_country);
+        validator.required("associate_province", no_province);
+        validator.required("associate_city", no_city);
+
+        validator.required("associate_confirm_password", no_confirm_password);
+        validator.eqaul("password", "associate_confirm_password", password_not_same);
+
+    }
+
+
+  if (action == "add")
+  {
+    if (document.forms['theForm'].elements['password'])
+    {
+      validator.password("password", password_invaild);
+      validator.eqaul("password", "pwd_confirm", password_error);
+    }
+  }
+  if (action == "edit" || action == "modif")
+  {
+    if (document.forms['theForm'].elements['old_password'].value.length > 0)
+    {
+      validator.password("new_password", password_invaild);
+      validator.eqaul("new_password", "pwd_confirm", password_error);
+    }
+  }
+
+  return validator.passed();
+}
+
+function get_navlist()
+{
+  if (!document.getElementById('nav_list[]'))
+  {
+    return;
+  }
+
+  document.getElementById('nav_list[]').value = joinItem(document.getElementById('menus_navlist'));
+  //alert(document.getElementById('nav_list[]').value);
+}
+//-->
+{/literal}
+</script>
+{include file="pagefooter.htm"}

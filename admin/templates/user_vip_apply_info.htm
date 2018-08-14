@@ -1,0 +1,76 @@
+<!-- $Id: msg_info.htm 16854 2009-12-07 06:20:09Z sxc_shop $ -->
+{include file="pageheader.htm"}
+<div class="main-div">
+  <table width="98%">
+    <tr>
+      <td class="">用户信息:
+        <a href="users.php?act=edit&id={$msg.user_id}">{$msg.user_name}</a></td>
+    </tr>
+    <tr>
+      <td class="">{$lang.user_rank}:
+        <select name="user_rank">
+          <option value="0">{$lang.not_special_rank}</option>
+          {html_options options=$special_ranks selected=$msg.user_rank}
+        </select></td>
+    </tr>
+    <tr>
+      <td style="padding: 0px 20px" colspan="2">
+        <h3>{$msg.content|escape:"html"|nl2br}</h3>
+        <hr size="1" />
+        <div>{$lang.apply_status_options[$msg.status]}</div>
+        <div align="right"  nowrap="nowrap">{$msg.user_name} @ {$msg.create_time}</div>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td align="center" colspan="2">
+        <!--{if $msg.status eq 2}-->
+        <!--<input type="button" data-location="user_vip_apply.php?act=check&check=save&id={$msg.apply_id}" onclick="save(this)" value="{$lang.save}" class="button" />-->
+        <!--{/if}-->
+        {if $msg.status eq 1}
+        <input type="button"  data-location="user_vip_apply.php?act=check&check=allow&id={$msg.apply_id}" onclick="save(this)" value="{$lang.allow}" class="button" />
+
+        <input type="button" onclick="location.href='user_vip_apply.php?act=check&check=forbid&id={$msg.apply_id}'" value="{$lang.forbid}" class="button" />
+        {/if}
+    </td>
+    </tr>
+
+  </table>
+</div>
+
+
+
+{insert_scripts files="../js/utils.js,validator.js"}
+<script language="JavaScript">
+<!--
+{literal}
+// document.forms['theForm'].elements['msg_content'].focus();
+
+function save(elem) {
+    var url = elem.getAttribute('data-location');
+    var user_rank = document.getElementsByName('user_rank')[0].value;
+    // var user_rank ='';
+    console.log(url+'&user_rank='+user_rank)
+    location.href = url+'&user_rank='+user_rank;
+}
+
+/**
+ * 检查表单输入的数据
+ */
+function validate()
+{
+    validator = new Validator("theForm");
+    // validator.required("msg_content",  no_reply_content);
+    return validator.passed();
+}
+
+onload = function()
+{
+    // 开始检查订单
+    startCheckOrder();
+}
+//-->
+{/literal}
+</script>
+{include file="pagefooter.htm"}

@@ -1,0 +1,36 @@
+<!-- #BeginLibraryItem "/library/new_page_header.lbi" -->
+<!-- #EndLibraryItem -->
+<div class="con">
+	<header class="dis-box header-menu b-color color-whie"><a class="" href="javascript:history.go(-1)"><i class="iconfont icon-jiantou"></i></a>
+		<h3 class="box-flex">{$title}</h3>
+		<p><i class="iconfont icon-pailie j-nav-box"></i></p>
+	</header>
+	<div class="j-nav-content">
+		<ul class="dis-box new-footer-box">
+			<li class="box-flex">
+				<a href="{:url('index/index')}" class="nav-cont"><i class="nav-box"><img src="__TPL__/statics/img/home.png"></i><span>首页</span></a>
+			</li>
+			<li class="box-flex">
+				<a href="{:url('category/top_all')}" class="nav-cont"><i class="nav-box"><img src="__TPL__/statics/img/cate.png"></i><span>分类</span></a>
+				<li class="box-flex"><a href="javascript:;" class="nav-cont j-search-input"><i class="nav-box"><img src="__TPL__/statics/img/search.png"></i><span>搜索</span></a></li>
+				<li class="box-flex"><a href="{:url('flow/cart')}" class="nav-cont"><i class="nav-box"><img src="__TPL__/statics/img/flow.png"></i><span>购物车</span></a></li>
+				<li class="box-flex"><a href="{:url('user/index')}" class="nav-cont"><i class="nav-box"><img src="__TPL__/statics/img/user.png"></i><span>用户中心</span></a></li>
+		</ul>
+	</div>
+	<form action="{:url('user/user_vip_apply')}" method="post" enctype="multipart/form-data" name="formMsg" onSubmit="return submitMsg()">
+		<section class=" padding-all b-color-f com-textarea">
+			<div class="f-c-select-msg ">
+				<div class="text-area1">
+					<textarea name="content" class="text-area1" placeholder="申请备注 " wrap="virtual"></textarea>
+				</div>
+			</div>
+		</section>
+		<div class="padding-all">
+			<button type="submit" name="submit" class="btn-submit" value="">{$lang.submit} </button>
+		</div>
+	</form>
+</div>
+<!-- #BeginLibraryItem "/library/new_search.lbi " -->
+<!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/page_footer.lbi " -->
+<!-- #EndLibraryItem -->

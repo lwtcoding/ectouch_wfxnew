@@ -1,0 +1,1218 @@
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532053815'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532053815
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532140344', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532111544;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532140344, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532111544;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532140344', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions` WHERE expiry < 1532138544
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532111544'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532111544
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532140526', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532111726;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532140526, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532111726;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532140526', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions` WHERE expiry < 1532138726
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532111726'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532111726
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532140884', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532112084;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532140884, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532112084;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532140884', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions_data` WHERE expiry < 1532139084
+
+DELETE FROM `ectouch`.`ecs_sessions` WHERE expiry < 1532139084
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532112084'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532112084
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532141066', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532112266;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532141066, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532112266;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532141066', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions` WHERE expiry < 1532139266
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532112266'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532112266
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532141428', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532112628;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532141428, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532112628;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532141428', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions` WHERE expiry < 1532139628
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532112628'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532112628
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532141785', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532112985;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532141785, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532112985;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532141785', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions_data` WHERE expiry < 1532139985
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532112985'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532112985
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532142088', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532113288;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532142088, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532113288;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532142088', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions` WHERE expiry < 1532140288
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532113288'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532113288
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532142445', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532113645;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532142445, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532113645;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532142445', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions_data` WHERE expiry < 1532140645
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532113645'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532113645
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532142806', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532114006;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532142806, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532114006;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532142806', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions` WHERE expiry < 1532141006
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532114006'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532114006
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532143164', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532114364;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532143164, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532114364;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532143164', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions` WHERE expiry < 1532141364
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532114364'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532114364
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532143344', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532114544;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532143344, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532114544;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532143344', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions` WHERE expiry < 1532141544
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532114544'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532114544
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532143525', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532114725;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532143525, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532114725;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532143525', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532114725'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532114725
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532143884', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532115084;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532143884, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532115084;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532143884', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions_data` WHERE expiry < 1532142084
+
+DELETE FROM `ectouch`.`ecs_sessions` WHERE expiry < 1532142084
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532115084'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532115084
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532144066', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532115266;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532144066, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532115266;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532144066', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions_data` WHERE expiry < 1532142266
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532115266'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532115266
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532144426', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532115626;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532144426, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532115626;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532144426', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions_data` WHERE expiry < 1532142626
+
+DELETE FROM `ectouch`.`ecs_sessions` WHERE expiry < 1532142626
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532115626'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532115626
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532144784', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532115984;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532144784, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532115984;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532144784', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions` WHERE expiry < 1532142984
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532115984'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532115984
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532144968', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532116168;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532144968, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532116168;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532144968', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions_data` WHERE expiry < 1532143168
+
+DELETE FROM `ectouch`.`ecs_sessions` WHERE expiry < 1532143168
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532116168'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532116168
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532145148', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532116348;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532145148, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532116348;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532145148', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions_data` WHERE expiry < 1532143348
+
+DELETE FROM `ectouch`.`ecs_sessions` WHERE expiry < 1532143348
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532116348'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532116348
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532145506', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532116706;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532145506, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532116706;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532145506', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions` WHERE expiry < 1532143706
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532116706'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532116706
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532145865', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532117065;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532145865, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532117065;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532145865', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions_data` WHERE expiry < 1532144065
+
+DELETE FROM `ectouch`.`ecs_sessions` WHERE expiry < 1532144065
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532117065'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532117065
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532146048', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532117248;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532146048, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532117248;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532146048', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions` WHERE expiry < 1532144248
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532117248'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532117248
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532146407', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532117607;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532146407, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532117607;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532146407', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532117607'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532117607
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532147994', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532119194;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532147994, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532119194;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532147994', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions` WHERE expiry < 1532146194
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532119194'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532119194
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532148585', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532119785;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532148585, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532119785;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532148585', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532119785'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532119785
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532148768', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532119968;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532148768, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532119968;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532148768', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions` WHERE expiry < 1532146968
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532119968'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532119968
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532149125', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532120325;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532149125, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532120325;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532149125', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions_data` WHERE expiry < 1532147325
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532120325'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532120325
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532149308', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532120508;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532149308, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532120508;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532149308', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions` WHERE expiry < 1532147508
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532120508'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532120508
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532149666', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532120866;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532149666, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532120866;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532149666', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions_data` WHERE expiry < 1532147866
+
+DELETE FROM `ectouch`.`ecs_sessions` WHERE expiry < 1532147866
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532120866'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532120866
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532150029', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532121229;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532150029, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532121229;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532150029', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532121229'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532121229
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532150386', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532121586;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532150386, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532121586;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532150386', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions_data` WHERE expiry < 1532148586
+
+DELETE FROM `ectouch`.`ecs_sessions` WHERE expiry < 1532148586
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532121586'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532121586
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532150565', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532121765;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532150565, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532121765;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532150565', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532121765'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532121765
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532150749', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532121949;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532150749, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532121949;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532150749', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532121949'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532121949
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532151105', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532122305;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532151105, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532122305;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532151105', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions` WHERE expiry < 1532149305
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532122305'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532122305
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532151285', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532122485;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532151285, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532122485;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532151285', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions_data` WHERE expiry < 1532149485
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532122485'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532122485
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532151467', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532122667;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532151467, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532122667;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532151467', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions_data` WHERE expiry < 1532149667
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532122667'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532122667
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532151828', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532123028;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532151828, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532123028;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532151828', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions` WHERE expiry < 1532150028
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532123028'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532123028
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532152188', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532123388;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532152188, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532123388;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532152188', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions` WHERE expiry < 1532150388
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532123388'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532123388
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532152547', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532123747;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532152547, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532123747;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532152547', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions_data` WHERE expiry < 1532150747
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532123747'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532123747
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532152906', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532124106;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532152906, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532124106;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532152906', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions` WHERE expiry < 1532151106
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532124106'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532124106
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532153089', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532124289;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532153089, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532124289;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532153089', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532124289'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532124289
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532155791', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532126991;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532155791, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532126991;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532155791', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532126991'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532126991
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532155974', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532127174;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532155974, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532127174;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532155974', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions` WHERE expiry < 1532154174
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532127174'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532127174
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532156331', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532127531;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532156331, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532127531;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532156331', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions_data` WHERE expiry < 1532154531
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532127531'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532127531
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532156514', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532127714;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532156514, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532127714;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532156514', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions` WHERE expiry < 1532154714
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532127714'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532127714
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532156871', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532128071;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532156871, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532128071;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532156871', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532128071'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532128071
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532157054', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532128254;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532157054, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532128254;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532157054', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions_data` WHERE expiry < 1532155254
+
+DELETE FROM `ectouch`.`ecs_sessions` WHERE expiry < 1532155254
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532128254'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532128254
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532157411', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532128611;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532157411, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532128611;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532157411', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions_data` WHERE expiry < 1532155611
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532128611'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532128611
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532157774', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532128974;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532157774, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532128974;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532157774', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions` WHERE expiry < 1532155974
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532128974'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532128974
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532158131', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532129331;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532158131, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532129331;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532158131', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532129331'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532129331
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532158315', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532129515;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532158315, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532129515;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532158315', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532129515'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532129515
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532158673', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532129873;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532158673, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532129873;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532158673', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532129873'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532129873
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532159035', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532130235;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532159035, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532130235;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532159035', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532130235'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532130235
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532159391', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532130591;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532159391, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532130591;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532159391', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532130591'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532130591
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532159751', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532130951;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532159751, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532130951;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532159751', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532130951'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532130951
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532159969', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532131169;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532159969, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532131169;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532159969', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532131169'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532131169
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532160294', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532131494;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532160294, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532131494;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532160294', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions` WHERE expiry < 1532158494
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532131494'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532131494
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532160651', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532131851;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532160651, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532131851;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532160651', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532131851'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532131851
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532161113', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532132313;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532161113, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532132313;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532161113', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532132313'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532132313
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532161294', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532132494;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532161294, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532132494;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532161294', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions` WHERE expiry < 1532159494
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532132494'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532132494
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532161653', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532132853;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532161653, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532132853;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532161653', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532132853'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532132853
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532161833', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532133033;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532161833, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532133033;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532161833', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532133033'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532133033
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532162013', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532133213;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532162013, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532133213;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532162013', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532133213'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532133213
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532162194', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532133394;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532162194, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532133394;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532162194', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions` WHERE expiry < 1532160394
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532133394'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532133394
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532162376', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532133576;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532162376, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532133576;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532162376', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions` WHERE expiry < 1532160576
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532133576'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532133576
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532162768', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532133968;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532162768, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532133968;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532162768', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions` WHERE expiry < 1532160968
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532133968'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532133968
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532162915', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532134115;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532162915, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532134115;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532162915', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532134115'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532134115
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532163273', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532134473;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532163273, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532134473;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532163273', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions_data` WHERE expiry < 1532161473
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532134473'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532134473
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532163456', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532134656;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532163456, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532134656;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532163456', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions` WHERE expiry < 1532161656
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `ectouch`.`ecs_sessions` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT data, expiry FROM `ectouch`.`ecs_sessions_data` WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31'
+
+SELECT code, value FROM `ectouch`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE add_time >= '1532134656'
+
+SELECT COUNT(*) FROM `ectouch`.`ecs_order_info` WHERE pay_time >= 1532134656
+
+DESC `ectouch`.`ecs_sessions_data`
+
+INSERT INTO `ectouch`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('ce1a89674bb1922cc7bbe99c56ea5b31', '1532163816', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532135016;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1532163816, data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1532135016;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:3:\"lwt\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"13129484282@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-07-20\";}}}'
+
+UPDATE `ectouch`.`ecs_sessions` SET expiry = '1532163816', ip = '127.0.0.1', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'ce1a89674bb1922cc7bbe99c56ea5b31' LIMIT 1
+
+DELETE FROM `ectouch`.`ecs_sessions_data` WHERE expiry < 1532162016
+
+DELETE FROM `ectouch`.`ecs_sessions` WHERE expiry < 1532162016
+

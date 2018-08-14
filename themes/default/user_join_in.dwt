@@ -1,0 +1,30 @@
+<!-- #BeginLibraryItem "/library/new_page_header.lbi" -->
+<!-- #EndLibraryItem -->
+<header class="dis-box header-menu b-color color-whie"><a class="" href="javascript:history.go(-1)"><i class="iconfont icon-jiantou"></i></a>
+	<h3 class="box-flex">申请成为加盟商</h3>
+	<!--<p><i class="iconfont icon-pailie j-nav-box"></i></p>-->
+</header>
+
+	<form name="formEdit" action="{:url('user/user_vip_apply')}" method="post" >
+		<section class="flow-consignee ect-bg-colorf s-user-top onclik-admin">
+			<p style="font-size: 1.4rem;padding: 10px 0;">感谢您对我们平台的信任与支持，您正在进行操作的是申请成为我们平台的加盟商。成为加盟商可以获取到平台提供的更低折扣。</p>
+		</section>
+		<input name="act" type="hidden" value="profile" />
+		{if $show_btn}
+		<div class=" ect-padding-tb padding-all">
+			<button name="submit" type="submit" class="btn-submit" value="{$lang.confirm_edit}">确认申请</button>
+		</div>
+		{else}
+			<p style="text-align: center;padding: 15px 0;">正在审核中，请耐心等待</p>
+		{/if}
+	</form>
+
+</div>
+
+<!-- #BeginLibraryItem "/library/new_search.lbi" -->
+<!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/page_footer.lbi" -->
+<!-- #EndLibraryItem -->
+</body>
+
+</html>
