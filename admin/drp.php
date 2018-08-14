@@ -302,7 +302,7 @@ if ($_REQUEST['act'] == 'user_edit')
                 $cat_id.=$val.',';
             }
         }else{
-            sys_msg($_LANG['sale_cate_not_empty']);
+//            sys_msg($_LANG['sale_cate_not_empty']);
         }
         $data['cat_id'] = $cat_id;
         $db->autoExecute($ecs->table('drp_shop'), $data, 'UPDATE', "id = '$id'");
