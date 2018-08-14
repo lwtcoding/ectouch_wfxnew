@@ -1232,7 +1232,7 @@ textarea, input {border:none;}
 .n-sale-headerimg-box{width:7rem;height:7rem; border-radius:100%;overflow: hidden;border: 3px solid #e1e1e1;}
 .n-sale-headerimg-box img{width:100%;height:100%;}
 .n-sale-right-box{padding-left:1rem;}
-.n-sale-right-box h4{font-size:1.9rem;color:#fff;padding-top:0.6rem;}
+.n-sale-right-box h4{font-size:2.5rem;color:#fff;padding-top:0.6rem;}
 .n-sale-right-box p{color:#fff;font-size:1.2rem;padding: 0rem 0;}
 .n-sale-time time{font-size:1rem; color:#fff;}
 .n-sale-nav h4{color:#fff;text-align:center;font-size:2rem;}
@@ -1473,4 +1473,57 @@ span.t-jiantou i.icon-jiantou1.current{
 }
 .info_space{
 	padding: 1rem 1.3rem 2.5rem;
+}
+.ect-icon {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background: url(../../images/iconall.png) no-repeat;
+    background-size: 15em;
+}
+.icon-write .ect-icon-history {
+	display: block;
+    background-position: -5.4em -2.7em;
+}
+.ect-icon1 {
+    background-size: 18em;
+}
+.header-menu {
+    height: 4.6rem;
+    line-height: 4.6rem;
+    padding: 0 0.5rem;
+}
+.header-menu h3 {
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 4.6rem;
+}
+.b-color{
+	background: #343437;
+}
+.flex-column{
+	display: flex;
+	flex-direction: column;
+}
+.flex-row{
+	display: flex;
+	flex-direction: row;
+}
+.flex-item{
+	flex: 1;
+}
+.padding-normal{
+	padding: 1rem 1rem;
+}
+.header-line{
+	border-bottom: 1px solid #E1E1E1;
+}
+.order-header h4{
+	font-size: 1.8rem;
+}
+.order-info{
+	font-size: 1.6rem;
+	padding-left: 1rem;
+}
+.just-content_center{
+	justify-content: center;
 }

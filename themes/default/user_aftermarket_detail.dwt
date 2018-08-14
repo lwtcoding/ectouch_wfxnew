@@ -11,7 +11,7 @@
 		</li>
 		<li class="box-flex">
 			<a href="{:url('category/top_all')}" class="nav-cont"><i class="nav-box"><img src="__TPL__/statics/img/cate.png"></i><span>分类</span></a>
-			<li class="box-flex"><a href="javascript:;" class="nav-cont j-search-input"><i class="nav-box"><img src="__TPL__/statics/img/search.png"></i><span>搜索</span></a></li>
+			<!--<li class="box-flex"><a href="javascript:;" class="nav-cont j-search-input"><i class="nav-box"><img src="__TPL__/statics/img/search.png"></i><span>搜索</span></a></li>-->
 			<li class="box-flex"><a href="{:url('flow/cart')}" class="nav-cont"><i class="nav-box"><img src="__TPL__/statics/img/flow.png"></i><span>购物车</span></a></li>
 			<li class="box-flex"><a href="{:url('user/index')}" class="nav-cont"><i class="nav-box"><img src="__TPL__/statics/img/user.png"></i><span>用户中心</span></a></li>
 	</ul>
@@ -24,17 +24,87 @@
 				<div class="msg-item msg-lst">
 					<div class="msg-info m-top10"> <s class="arrow"></s>
 						<div class="dis-box">
-							<a  href="{:url('goods/index', array('id'=>$this->_var['goods']['goods_id']))}" target="_blank"><div class="n-detail-box"><img src="{$goods.goods_thumb}"></div></a>
-							<dl class="box-flex n-aft-detail-box">
-								<dt>
-                        <h4><a href="{:url('goods/index', array('id'=>$this->_var['goods']['goods_id']))}">{$goods.goods_name}{$goods.goods_attr}</a></h4>
-                      </dt>
-								<dd class="dd-price"><b>{$lang.shop_price}{$goods.goods_price} {$lang.number_to}：{$goods.goods_number}</b></dd>
-								<dd class="dd-price"><b class="pull-left">{$lang.ws_subtotal}：<span class="ect-colory">{$goods.subtotal}</span></b></dd>
-							</dl>
+							<a  href="{:url('goods/index', array('id'=>$this->_var['goods']['goods_id']))}">
+								<div class="n-detail-box"><img src="{$goods.goods_thumb}"></div>
+							</a>
+							<div class="box-flex">
+								<h4>{$goods.goods_name}{$goods.goods_attr}</h4>
+								<p class="dd-price">{$goods.goods_price}</p>
+							</div>
 						</div>
-						<div class="cutoff-line"></div>
-						<div class="desc">
+						<div class="flex-row_detail border_line">
+							<div class="flex-title">
+								{$lang.number_to}
+							</div>
+							<div class="flex-content">
+								<span>{$goods.goods_number}</span>
+							</div>
+						</div>
+						<div class="flex-row_detail border_line">
+							<div class="flex-title">
+								{$lang.ws_subtotal}
+							</div>
+							<div class="flex-content">
+								<span>{$goods.subtotal}</span>
+							</div>
+						</div>
+						<div class="flex-row_detail border_line">
+							<div class="flex-title">
+								{$lang.aftermarket_type}
+							</div>
+							<div class="flex-content">
+								<span>{$return.service_name}</span>
+							</div>
+						</div>
+						<div class="flex-row_detail border_line">
+							<div class="flex-title">
+								{$lang.aftermarket_status}
+							</div>
+							<div class="flex-content">
+								<span>{$return.return_status}</span>
+							</div>
+						</div>
+						<div class="flex-row_detail border_line">
+							<div class="flex-title">
+								{$lang.refund_status}
+							</div>
+							<div class="flex-content">
+								<span>{$return.refund_status}</span>
+							</div>
+						</div>
+						<div class="flex-row_detail border_line">
+							<div class="flex-title">
+								{$lang.aftermarket_number}
+							</div>
+							<div class="flex-content">
+								<span>{$return.service_sn}</span>
+							</div>
+						</div>
+						<div class="flex-row_detail border_line">
+							<div class="flex-title">
+								{$lang.order_addtime}
+							</div>
+							<div class="flex-content">
+								<span>{$return.formated_add_time}</span>
+							</div>
+						</div>
+						<div class="flex-row_detail border_line">
+							<div class="flex-title">
+								{$lang.return_num}
+							</div>
+							<div class="flex-content">
+								<span>{$goods.back_num}</span>
+							</div>
+						</div>
+						<div class="flex-row_detail border_line">
+							<div class="flex-title">
+								{$lang.should_return}
+							</div>
+							<div class="flex-content">
+								<span class="ect-colory">{$return.formated_should_return}</span>
+							</div>
+						</div>
+						<!--<div class="desc">
 							<div class="desc-i">{$lang.aftermarket_type}：<span>{$return.service_name}</span></div>
 							<div class="desc-i">{$lang.aftermarket_status}：<b>{$return.return_status}</b></div>
 							<div class="desc-i">{$lang.refund_status}：<b>{$return.refund_status}</b></div>
@@ -42,7 +112,7 @@
 							<div class="desc-i">{$lang.order_addtime}：<span>{$return.formated_add_time}</span></div>
 							<div class="cutoff-line cutoff-line2"></div>
 							<div class="additional"> {$lang.return_num}：<b>{$goods.back_num}</b>: {$lang.should_return}：<b class="ect-colory">{$return.formated_should_return}</b> </div>
-						</div>
+						</div>-->
 					</div>
 				</div>
 				<!--{if $return.cert}-->

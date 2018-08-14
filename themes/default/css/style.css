@@ -111,7 +111,7 @@ h4.title{font-size:1.6rem; line-height:1.4; display:block; height:auto; overflow
 .ect-pro-list:last-child{border-bottom:0;}
 .ect-pro-list ul li{clear:both; width:100%; height:auto; overflow:hidden; padding:0.6em; border-top:1px #e1e1e1 solid;margin-bottom: 10px;border-bottom: 1px solid #e1e1e1;}
 .ect-pro-list ul li:last-child{border-bottom:none;}
-.ect-pro-list ul li a{display:inline-block;padding-right: 0;}
+.ect-pro-list ul li a{display:inline-block;}
 .ect-pro-list ul li img{width:7em; height:7em;}
 .ect-pro-list ul li dl{margin-left: 0;}
 .ect-pro-list ul li dl dd{margin-top:0.4em; font-size:0.9em; overflow:hidden;}
@@ -645,4 +645,12 @@ border: 1px solid transparent;border-radius: 4px;cursor: pointer;display: inline
 }
 .order_am_btn a{
 	font-size: 1.6rem;
+}
+.btn-border{
+	border-radius: 5px;
+	display: inline-block !important;
+	border: 1px solid #343437;
+	background-color: #343437;
+	color: #FFFFFF !important;
+	padding: 8px 10px;
 }

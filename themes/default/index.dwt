@@ -70,8 +70,8 @@
 
 	<!--like-->
 	<div class="text-c n-cate-box">
-		<p class="index-title"><i class="iconfont icon-cainixihuan is-cainixihuan"></i>猜你喜欢</p>
-		<p class="index-small-title">实时推荐最适合您的宝贝</p>
+		<p class="index-title">谦和商品</p>
+		<!--<p class="index-small-title">实时推荐最适合您的宝贝</p>-->
 	</div>
 	<section class="product-list j-product-list n-index-box " data="1">
 

@@ -12,20 +12,20 @@
 							<img src="__TPL__/images/member-photo-img2.jpeg" /> {/if}
 						</a>
 					</div>-->
-					<div class="user-bg-box"><img src="__TPL__/statics/img/user-1.png"></div>
-					<div class="user-bg2-box"><img src="__TPL__/statics/img/user-2.png"></div>
+					<!--<div class="user-bg-box"><img src="__TPL__/statics/img/user-1.png"></div>
+					<div class="user-bg2-box"><img src="__TPL__/statics/img/user-2.png"></div>-->
 					<div class="box-flex">
 						<div class="g-s-i-title-a">
 							<a href="javascript:;">
 								<h4 class="ellipsis-one user-admin-size">{$info.name}</h4></a>
 							<a href="javascript:;">
-								<p class="user-reg-top color-whie f-03">{$rank_name}</p>
+								<p class="user-reg-topf-03" style="font-size: 1.4rem;">{$rank_name}</p>
 							</a>
 						</div>
 						{if !$isbind}
 						<div class="g-s-i-title-a">
 							<a href="{:url('user/bind')}">
-								<p class="user-reg-top color-whie f-03">电脑端账号绑定 </p>
+								<p class="user-reg-topf-03">电脑端账号绑定 </p>
 							</a>
 						</div>
 						{/if}
@@ -50,12 +50,12 @@
 		<div class="my-nav-box my-shoucang-bg">
 			<div class="user-nav-box n-g-s-i-title-1 dis-box text-center">
 				<a href="{:url('user/collection_list')}" class="box-flex">
-					<h4 class="color-whie ellipsis-one"><!--{if $list.goods_nums neq ''}--> {$list.goods_nums}<!--{else}-->0<!--{/if}--></h4>
-					<p class="color-whie t-remark3">收藏</p>
+					<h4 class="ellipsis-one"><!--{if $list.goods_nums neq ''}--> {$list.goods_nums}<!--{else}-->0<!--{/if}--></h4>
+					<p class="t-remark3">收藏</p>
 				</a>
 				<a href="{:url('user/msg_list')}" class="box-flex">
-					<h4 class="color-whie ellipsis-one"><!--{if $list.msg_list neq ''}--> {$list.msg_list}<!--{else}-->0<!--{/if}--></h4>
-					<p class="color-whie t-remark3">消息</p>
+					<h4 class="ellipsis-one"><!--{if $list.msg_list neq ''}--> {$list.msg_list}<!--{else}-->0<!--{/if}--></h4>
+					<p class="t-remark3">消息</p>
 				</a>
 			</div>
 		</div>

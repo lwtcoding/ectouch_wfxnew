@@ -89,22 +89,22 @@
       <li>
       	<a class="flex-row border_line" style="padding: 1rem 0;margin-bottom: 1rem;" href="{:url('goods/index', array('id'=>$this->_var['goods']['goods_id']))}" target="_blank">
       		<img src="{$goods.goods_thumb}">
-      		<div class="order_info_text">
-          	<h4 class="title">{$goods.goods_name}</h4>
-          	<p>{$goods.goods_attr}</p>
+      		<div class="order_info_text" style="flex: 1;">
+	          	<h4 class="title">{$goods.goods_name}</h4>
+	          	<p>{$goods.goods_attr}</p>
+	          	<div class="dd-price">{$lang.number_to}：{$goods.goods_number}</div>
+	      		<div class="dd-price">{$lang.ws_subtotal}：<span class="ect-colory">{$goods.subtotal}</span></div>
       		</div>
       	</a>
-      	<div class="dd-price">{$lang.number_to}：{$goods.goods_number}</div>
-      	<div class="dd-price">{$lang.ws_subtotal}：<span class="ect-colory">{$goods.subtotal}</span></div>
-        <div class="flex-row order_am_btn" style="margin-top: 1rem;">
+        <div class="flex-row order_am_btn" style="margin-top: 1rem;justify-content: flex-end;">
             <!--{if $goods.aftermarket eq 1}-->
-	              <a class="flex-item text_center" href="{:url('user/aftermarket_done',array('rec_id'=>$this->_var['goods']['rec_id'],'order_id'=>$this->_var['order']['order_id']))}" >查看申请记录</a>
-	              <a class="flex-item text_center" href="{:url('user/aftermarket_detail',array('ret_id'=>$this->_var['goods']['ret_id']))}" >退换货详情</a>
-	          <!--{else}-->
-		          <!--{if $goods.service_apply}-->
-		            <a class="flex-item text_center" href="{:url('user/aftermarket',array('rec_id'=>$this->_var['goods']['rec_id'],'order_id'=>$this->_var['order']['order_id']))}" >申请售后</a>
-		          <!--{/if}-->
+              <a class="btn-border" href="{:url('user/aftermarket_done',array('rec_id'=>$this->_var['goods']['rec_id'],'order_id'=>$this->_var['order']['order_id']))}" >查看申请记录</a>
+              <a class="btn-border" href="{:url('user/aftermarket_detail',array('ret_id'=>$this->_var['goods']['ret_id']))}" >退换货详情</a>
+          	<!--{else}-->
+	          <!--{if $goods.service_apply}-->
+	            <a class="btn-border" href="{:url('user/aftermarket',array('rec_id'=>$this->_var['goods']['rec_id'],'order_id'=>$this->_var['order']['order_id']))}" >申请售后</a>
 	          <!--{/if}-->
+          	<!--{/if}-->
         </div>
       </li>
       <!-- {/foreach} -->
@@ -119,23 +119,23 @@
 
 <section class="order-detail-info ect-margin-tb" style="margin-bottom:0;padding: 0;">
 	<div class="flex-row_detail border_line">
-				<div class="flex-title">
-					{$lang.consignee_name}
-				</div>
-				<div class="flex-content">
-					<span>{$order.consignee}</span>
-				</div>
+		<div class="flex-title">
+			{$lang.consignee_name}
+		</div>
+		<div class="flex-content">
+			<span>{$order.consignee}</span>
+		</div>
 	</div>
 	<div class="flex-row_detail border_line">
-				<div class="flex-title">
-					{$lang.mobile}
-				</div>
-				<div class="flex-content">
-					<span>{$order.mobile}</span>
-				</div>
+		<div class="flex-title">
+			{$lang.mobile}
+		</div>
+		<div class="flex-content">
+			<span>{$order.mobile}</span>
+		</div>
 	</div>
 	<!-- {if $order.exist_real_goods} -->
-  <div class="flex-row_detail border_line">
+  	<div class="flex-row_detail border_line">
 		<div class="flex-title">
 			{$lang.detailed_address}
 		</div>
@@ -153,13 +153,13 @@
 				<b class="ect-colory"><!-- {if $order.extension_code eq "group_buy"} -->{$lang.gb_deposit}<!-- {/if} -->{$order.formated_goods_amount}</b>
 			</p>
 			<p class="ect-margin-tb">
-      <!-- {if $order.surplus > 0} --> 
-      {$lang.use_surplus}：<b class="ect-colory">{$order.formated_surplus}</b><br>
-      <!-- {/if} --> 
-      </p>
+		      <!-- {if $order.surplus > 0} --> 
+		      {$lang.use_surplus}：<b class="ect-colory">{$order.formated_surplus}</b><br>
+		      <!-- {/if} --> 
+		      </p>
 		</div>
 	</div>
-	<!--
+<!--
   <ul>
     <li>{$lang.consignee_name}：<b>{$order.consignee}</b></li>
     <li>{$lang.mobile}：<b>{$order.mobile}</b></li>
@@ -237,7 +237,7 @@
   <ul>
     <li>{$lang.select_payment}：<b>{$order.pay_name}</b></li>
     <li>{$lang.order_amount}：<b class="ect-colory">{$order.formated_order_amount}</b></li>
-    <!-- {if $pay_desc} -->
+     {if $pay_desc} 
 		<li>{$pay_desc}</li>
 		<!-- {/if} -->
 	    <!--{if $payment_list}--> 
@@ -256,42 +256,155 @@
 	    </li>
     <!--{/if}-->
   </ul>
-</section> -->
+</section>-->
 <!--此处作用-->
 
-<section class="order-detail-info ect-margin-tb ect-margin-bottom0 user-bottom0">
-  <ul style="margin-bottom: 2rem;">
+<section class="order-detail-info ect-margin-tb" style="margin-bottom: 2rem;">
+	<!-- {if $order.shipping_id > 0} -->
+	<div class="flex-row_detail border_line">
+		<div class="flex-title">
+			{$lang.shipping}
+		</div>
+		<div class="flex-content">
+			<span>{$order.shipping_name}</span>
+		</div>
+	</div>
+    <!-- {/if} -->
+    <div class="flex-row_detail border_line">
+		<div class="flex-title">
+			{$lang.payment}
+		</div>
+		<div class="flex-content">
+			<span>{$order.pay_name}</span>
+		</div>
+	</div>
+	
+	<!--{if $order.insure_fee > 0}--> 
+    <!--{/if}--> 
+    <!-- {if $order.pack_name} 是否使用包装 -->
+    <div class="flex-row_detail border_line">
+		<div class="flex-title">
+			{$lang.use_pack}
+		</div>
+		<div class="flex-content">
+			<span>{$order.pack_name}</span>
+		</div>
+	</div>
+    <!-- {/if} 是否使用包装 --> 
+    
+    <!-- {if $order.card_name} 是否使用贺卡 -->
+    <div class="flex-row_detail border_line">
+		<div class="flex-title">
+			{$lang.use_card}
+		</div>
+		<div class="flex-content">
+			<span>{$order.card_name}</span>
+		</div>
+	</div>
+    <!-- {/if} --> 
+    
+    <!-- {if $order.card_message} 是否使用贺卡 -->
+    <div class="flex-row_detail border_line">
+		<div class="flex-title">
+			{$lang.bless_note}
+		</div>
+		<div class="flex-content">
+			<span>{$order.card_message}</span>
+		</div>
+	</div>
+    <!-- {/if} 是否使用贺卡 --> 
+    
+    <!-- {if $order.surplus > 0} 是否使用余额 --> 
+    <!-- {/if} --> 
+    <!-- {if $order.integral > 0} 是否使用积分 -->
+    <div class="flex-row_detail border_line">
+		<div class="flex-title">
+			{$lang.use_integral}
+		</div>
+		<div class="flex-content">
+			<span>{$order.integral}</span>
+		</div>
+	</div>
+    <!-- {/if} 是否使用积分 --> 
+    
+    <!-- {if $order.bonus > 0} 是否使用红包 --> 
+    <!-- {/if} --> 
+    <!-- {if $order.inv_payee && $order.inv_content} 是否开发票 -->
+    <div class="flex-row_detail border_line">
+		<div class="flex-title">
+			{$lang.invoice_title}
+		</div>
+		<div class="flex-content">
+			<span>{$order.inv_payee}</span>
+		</div>
+	</div>
+	<div class="flex-row_detail border_line">
+		<div class="flex-title">
+			{$lang.invoice_content}
+		</div>
+		<div class="flex-content">
+			<span>{$order.inv_content}</span>
+		</div>
+	</div>
+    <!-- {/if} --> 
+    
+    <!-- {if $order.postscript} 是否有订单附言 -->
+    <div class="flex-row_detail border_line">
+		<div class="flex-title">
+			{$lang.order_postscript}
+		</div>
+		<div class="flex-content">
+			<span>{$order.postscript}</span>
+		</div>
+	</div>
+    <!-- {/if} -->
+    <div class="flex-row_detail border_line">
+		<div class="flex-title">
+			{$lang.booking_process}
+		</div>
+		<div class="flex-content">
+			<span>{$order.how_oos_name}</span>
+		</div>
+	</div>
+	
+  <!--<ul style="margin-bottom: 2rem;">
    <!-- {if $order.shipping_id > 0} -->
     <li>{$lang.shipping}：<b>{$order.shipping_name}</b></li>
     <!-- {/if} -->
+    
     <li>{$lang.payment}：<b>{$order.pay_name}</b></li>
     <!--{if $order.insure_fee > 0}--> 
     <!--{/if}--> 
     <!-- {if $order.pack_name} 是否使用包装 -->
     <li>{$lang.use_pack}：<b>{$order.pack_name}</b></li>
     <!-- {/if} 是否使用包装 --> 
+    
     <!-- {if $order.card_name} 是否使用贺卡 -->
     <li>{$lang.use_card}：<b>{$order.card_name}</b></li>
     <!-- {/if} --> 
+    
     <!-- {if $order.card_message} 是否使用贺卡 -->
     <li>{$lang.bless_note}：<b>{$order.card_message}</b></li>
     <!-- {/if} 是否使用贺卡 --> 
+    
     <!-- {if $order.surplus > 0} 是否使用余额 --> 
     <!-- {/if} --> 
     <!-- {if $order.integral > 0} 是否使用积分 -->
     <li>{$lang.use_integral}：<b>{$order.integral}</b></li>
     <!-- {/if} 是否使用积分 --> 
+    
     <!-- {if $order.bonus > 0} 是否使用红包 --> 
     <!-- {/if} --> 
     <!-- {if $order.inv_payee && $order.inv_content} 是否开发票 -->
     <li>{$lang.invoice_title}：<b>{$order.inv_payee}</b></li>
     <li>{$lang.invoice_content}：<b>{$order.inv_content}</b></li>
     <!-- {/if} --> 
+    
     <!-- {if $order.postscript} 是否有订单附言 -->
     <li>{$lang.order_postscript}：<b>{$order.postscript}</b></li>
     <!-- {/if} -->
     <li>{$lang.booking_process}：<b>{$order.how_oos_name}</b></li>
-  </ul>
+  </ul>-->
 </section>
 </div>
 <!-- #BeginLibraryItem "/library/new_search.lbi" --><!-- #EndLibraryItem --> <!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
