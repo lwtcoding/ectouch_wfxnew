@@ -379,7 +379,7 @@ border: 1px solid transparent;border-radius: 4px;cursor: pointer;display: inline
 =================*/
 .flow-checkout section{border-top:1px solid #e3e3e3; border-bottom:1px solid #e3e3e3; background:#fff}
 .flow-checkout section i,.checkout-add i{font-style:normal; color:#bbb;}
-.flow-checkout .ect-radio i{margin-top:0.7em;}
+.flow-checkout .ect-radio i{margin-top:0;}
 .checkout-add{position:relative; padding:0.8em 0.6em}
 .checkout-add p.title{font-size:1.3em}
 .checkout-add i{position:absolute; font-size:2em; right:0.2em; top:50%; margin-top:-0.5em;}
@@ -628,6 +628,8 @@ border: 1px solid transparent;border-radius: 4px;cursor: pointer;display: inline
 	flex: 1;
 	padding: 1rem;
 	min-width: 100px;
+	font-size: 1.6rem;
+	font-weight: bold;
 }
 .flex-row_detail .flex-content{
 	padding: 1rem;

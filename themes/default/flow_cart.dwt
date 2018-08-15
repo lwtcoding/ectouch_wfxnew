@@ -24,7 +24,7 @@
 				<div class="n-flow-right-sum">
 					<div class="ect-clear-over">
 						<a href="{:url('goods/index',array('id'=>$this->_var['goods']['goods_id']))}"><img src="{$goods.goods_thumb}" title="{$goods.goods_name|escape:html}"></a>
-						<div class="flex-item flex-column">
+						<div class="flex-item flex-column" style="padding-left: 1rem;">
 							<div class="good_info">
 								<h4 class="title">
 				              		<a href="{:url('goods/index',array('id'=>$this->_var['goods']['goods_id']))}">{$goods.goods_name} 

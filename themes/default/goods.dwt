@@ -84,7 +84,7 @@
 				<!--{if goods.is__promote and $goods.gmt_end_time } 促销-->
 				
 				<!--{else}-->
-				<p class="p-market"style="color:red;">
+				<p class="p-market"style="color:#FF2D55;">
 					会员等级价格 {$goods.rank_price_formated}
 				</p>
 				<!--{/if}-->
@@ -184,7 +184,7 @@
 										<h4 class="box-flex">{$goods.goods_style_name}</h4>
 										<i class="iconfont icon-guanbi show-div-guanbi"></i>
 									</div>
-									<p><span class="p-price t-first" id="ECS_GOODS_AMOUNT">
+									<p><span class="p-price t-first" id="ECS_GOODS_AMOUNT" style="color: #FF2D55;">
 										<!--{if $goods.is_promote and $goods.gmt_end_time } 促销-->
 										{$goods.promote_price}
 										<!--{else}-->

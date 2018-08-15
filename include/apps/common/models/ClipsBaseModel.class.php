@@ -875,7 +875,7 @@ class ClipsBaseModel extends BaseModel {
      * 获取未读取的消息数量
      */
 	public function msg_lists($user_id){
-		$sql = "select msg_id from " . $this->pre . "feedback where  user_name= '".$_SESSION["user_name"]."'";
+		$sql = "select msg_id from " . $this->pre . "feedback where user_id=".$user_id." AND user_name= '".$_SESSION["user_name"]."'";
 		$ress = $this->query($sql);				
 		if($ress){
 			foreach($ress as $k)

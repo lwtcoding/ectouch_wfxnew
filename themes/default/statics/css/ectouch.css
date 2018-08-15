@@ -742,9 +742,9 @@ a.a-sequence .iconfont.icon-icon-square:before{font-size:3.2rem;}
 /*商品详情页 － tab*/
 .goods-info .tab-title,.flow-coupon .tab-title{font-size:1.5rem; position: fixed; left:0; right:0; top:0; z-index: 11; text-align: center; border-bottom:1px solid #F3F4F9;}
 .goods-info .tab-title,.flow-coupon .tab-title{padding:1.5rem 0;}
-.goods-info .tab-title li,.flow-coupon .tab-title li{height:1.8rem; line-height:1.8rem; box-sizing: border-box;font-size:1.5rem;}
+.goods-info .tab-title li,.flow-coupon .tab-title li{height:1.8rem; line-height:1.8rem; box-sizing: border-box;font-size:1.5rem;color:rgba(60,60,60,.5)}
 .tab-title{color:#666;}
-.tab-title .active,.tab-title .active a{color:#1cbb7f;}
+.tab-title .active,.tab-title .active{color:#343437 !important;}
 .tab-title li{border-right:1px solid #F3F4F9;}
 .tab-title li:last-of-type{border-right:0;}
 .goods-info img{max-width: 100%; height:auto}
