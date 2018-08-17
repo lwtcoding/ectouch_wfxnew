@@ -2271,7 +2271,7 @@ class UsersModel extends BaseModel {
             if ($adress && count($adress)>0) {
                 $address .= $adress[0]['region_name'];
             }
-            $address.= C('shop_address') . '收件人：' . C('shop_name') . '联系电话：' . C('service_phone');
+            $address.= C('shop_address') . '</br>收件人：' . C('shop_name') . '</br>联系电话：' . C('service_phone');
         }
         return $address;
     }

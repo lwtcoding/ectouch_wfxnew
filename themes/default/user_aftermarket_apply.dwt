@@ -16,10 +16,10 @@
 			<li class="box-flex"><a href="{:url('user/index')}" class="nav-cont"><i class="nav-box"><img src="__TPL__/statics/img/user.png"></i><span>用户中心</span></a></li>
 	</ul>
 </div>
-<div style="top: 0px; min-height: 567px; opacity: 1;background:#fff;" id="page">
+<div style="top: 0px; min-height: 567px; opacity: 1;background:#f1f1f1;" id="page">
 	<div id="wrapper">
 		<div id="scroller">
-			<div class="panel panel-form">
+			<div class="panel panel-form new-panel">
 				<form class="f-form" method="post" action="{:url('user/aftermarket_done')}" enctype="multipart/form-data" name="serviceform" novalidate="novalidate">
 					<div class="panel-heading">
 						<div id="J_ModId_2">
@@ -28,10 +28,10 @@
 									<div class="f-label"><em>*</em>{$lang.aftermarket_apply}</div>
 									<div class="f-controls select-wrapper">
 										<select name="service_id" onchange="changeServiceType(this.value)">
-                    <!--{foreach from=$service_type item=service name=service_type}-->
-                    <option value="{$service.service_id}" {if $service_id == $service.service_id}selected ="true"{/if}>{$service.service_name}</option>
-                    <!--{/foreach}-->
-                  </select>
+					                    <!--{foreach from=$service_type item=service name=service_type}-->
+					                    <option value="{$service.service_id}" {if $service_id == $service.service_id}selected ="true"{/if}>{$service.service_name}</option>
+					                    <!--{/foreach}-->
+					                  </select>
 									</div>
 								</div>
 							</div>
@@ -119,6 +119,7 @@
 									<div style="display: none;" id="msg-wrapper-contractFee" class="msg-wrapper"></div>
 								</div>
 								<!--赔付金额 end-->
+								
     <div class="uploader-field">
                   <div class="J_TakephotoBox takephoto-box" id="uploader">
                     <div class="J_TakephotoTrigger takephoto-trigger btns">
@@ -201,8 +202,14 @@
 								<!--退款说明 end-->
 								<!--商家地址start-->
 								<div id="bidi-form-93" class="f-field">
-									<div class="row"> <span class="memo-tip"></span>
-										<div class="f-label">寄回商家地址：</div>
+									<div class="row"> 
+										<div class="f-controls n-aftermark-cont">
+											寄回商家地址
+										</div>
+									</div>
+									<div class="row"> 
+										<span class="memo-tip"></span>
+										<!--<div class="f-label">寄回商家地址：</div>-->
 										<div class="f-controls n-aftermark-cont">
 											<div class="n-add-box">
 												{$business_address}
@@ -213,64 +220,111 @@
 									<div style="display: none;" id="msg-wrapper-description" class="msg-wrapper"></div>
 								</div>
 								<!--商家地址end-->
-                 <div class="uploader-field">
-                  <div class="J_TakephotoBox takephoto-box" id="uploader">
-                    <div class="J_TakephotoTrigger takephoto-trigger btns">
-                      <div class="add-text" id="picker">
-                        <span>(最多三张)</span>
-                        </div>
-                    </div>
-                     <ul id="thelist" class="uploader-list" style="margin-top:0px">
-
-                    </ul>
-                  </div>
-                  <div style="display: none;" class="msg-wrapper"></div>
-                </div>
-
-               <!--上传凭证 end-->
+					             <div class="uploader-field">
+					              <div class="J_TakephotoBox takephoto-box" id="uploader">
+					                <div class="J_TakephotoTrigger takephoto-trigger btns">
+					                  <div class="add-text" id="picker" style="margin-left: 15px;margin-right: 15px;border-radius: 5px;">
+					                    <span>(最多三张)</span>
+					                    </div>
+					                </div>
+					                 <ul id="thelist" class="uploader-list" style="margin-top:0px">
+					
+					                </ul>
+					              </div>
+					              <div style="display: none;" class="msg-wrapper"></div>
+					            </div>
+					
+					           <!--上传凭证 end-->
 
 								<div class="ect-bg-colorf  aftermarket" style="clear:both;">
-
-									<ul class="n-addr-box dis-box">
+									
+									<div class="flex-row column_padding border_line">
+										<div class="flex-item">
+											<span class="form-title">{$lang.consignee_name}</span>
+										</div>
+										<div>
+											<input name="consignee" placeholder="{$lang.consignee_name}{$lang.require_field}" type="text" class="inputBg" value="{$order.consignee|escape}" />
+										</div>
+									</div>
+									
+									<div class="flex-row column_padding border_line">
+										<div class="flex-item">
+											<span class="form-title">{$lang.mobile}</span>
+										</div>
+										<div>
+											<input placeholder="{$lang.mobile}{$lang.require_field}" name="phone" type="text" class="inputBg_touch" value="{$order.mobile|escape}" />
+										</div>
+									</div>
+									
+									<!--<ul class="dis-box">
 										<li class="n-left-cont">{$lang.consignee_name}：</li>
 										<li class="box-flex"> <input name="consignee" placeholder="{$lang.consignee_name}{$lang.require_field}" type="text" class="inputBg" value="{$order.consignee|escape}" /></li>
-									</ul>
-									<ul class="n-addr-box dis-box">
+									</ul>-->
+									<!--<ul class="dis-box">
 										<li class="n-left-cont">{$lang.mobile}：</li>
 										<li class="box-flex"> <input placeholder="{$lang.mobile}{$lang.require_field}" name="phone" type="text" class="inputBg_touch" value="{$order.mobile|escape}" /></li>
-									</ul>
-									<ul class="n-addr-box dis-box" style="display:none">
+									</ul>-->
+									<ul class="dis-box" style="display:none">
 										<li class="n-left-cont">{$lang.city_district}：</li>
 										<li class="box-flex">
 											<span>
-                      <div class="f-controls select-wrapper">
-                      <select name="country" id="selCountries_{$sn}" onchange="region.changed(this, 1, 'selProvinces_{$sn}')">
-                        <option value="0">{$lang.please_select}{$name_of_region[0]}</option>
-                        <!-- {foreach from=$country_list item=country} -->
-                        <option value="{$country.region_id}"{if $country.region_id eq '1'} selected{/if}>{$country.region_name}</option>
-                        <!-- {/foreach} -->
-                      </select>
-                      </div>
-                      </span>
+						                      <div class="f-controls select-wrapper">
+						                      <select name="country" id="selCountries_{$sn}" onchange="region.changed(this, 1, 'selProvinces_{$sn}')">
+						                        <option value="0">{$lang.please_select}{$name_of_region[0]}</option>
+						                        <!-- {foreach from=$country_list item=country} -->
+						                        <option value="{$country.region_id}"{if $country.region_id eq '1'} selected{/if}>{$country.region_name}</option>
+						                        <!-- {/foreach} -->
+						                      </select>
+						                      </div>
+						                      </span>
 										</li>
 									</ul>
-									<ul class="n-addr-box dis-box" id="selDistricts_{$sn}_box" {if !$district_list.$sn}style="" {/if}>
+									<div class="flex-row column_padding border_line" id="selDistricts_{$sn}_box" {if !$district_list.$sn}style="" {/if}>
+										<div class="flex-item">
+											<span class="form-title">省/市</span>
+										</div>
+										<div class="flex-item">
+											<select name="province" id="selProvinces_{$sn}" onchange="region.changed(this, 2, 'selCities_{$sn}')">
+						                        <option value="0">{$lang.please_select}{$name_of_region[1]}</option>
+						                        <!-- {foreach from=$province_list item=province} -->
+						                        <option value="{$province.region_id}" {if $order.province eq $province.region_id}selected{/if}>{$province.region_name}</option>
+						                        <!-- {/foreach} -->
+						                      </select>
+										</div>
+									</div>
+									<!--<ul class="dis-box" id="selDistricts_{$sn}_box" {if !$district_list.$sn}style="" {/if}>
 										<li class="n-left-cont">省/市：</li>
 										<li class="box-flex">
 											<span>    
-		               	<div class="input-text f-controls select-wrapper" >               		
-	                       <select name="province" id="selProvinces_{$sn}" onchange="region.changed(this, 2, 'selCities_{$sn}')">
-	                        <option value="0">{$lang.please_select}{$name_of_region[1]}</option>
-	                        <!-- {foreach from=$province_list item=province} -->
-	                        <option value="{$province.region_id}" {if $order.province eq $province.region_id}selected{/if}>{$province.region_name}</option>
-	                        <!-- {/foreach} -->
-	                      </select>
-	                          </div>
-	                      </span>
+							               	<div class="input-text f-controls select-wrapper" >               		
+						                       <select name="province" id="selProvinces_{$sn}" onchange="region.changed(this, 2, 'selCities_{$sn}')">
+						                        <option value="0">{$lang.please_select}{$name_of_region[1]}</option>
+						                        <!-- {foreach from=$province_list item=province} -->
+						                        <option value="{$province.region_id}" {if $order.province eq $province.region_id}selected{/if}>{$province.region_name}</option>
+						                        <!-- {/foreach} -->
+						                      </select>
+						                          </div>
+						                      </span>
 
 										</li>
-									</ul>
-									<ul class="n-addr-box dis-box" id="selDistricts_{$sn}_box" {if !$district_list.$sn}style="" {/if}>
+									</ul>-->
+									
+									<div class="flex-row column_padding border_line" id="selDistricts_{$sn}_box" {if !$district_list.$sn}style="" {/if}>
+										<div class="flex-item">
+											<span class="form-title">城市</span>
+										</div>
+										<div class="flex-item">
+											<select name="city" id="selCities_{$sn}" onchange="region.changed(this, 3, 'selDistricts_{$sn}')" >
+						                        <option value="0">{$lang.please_select}{$name_of_region[2]}</option>
+						                        <!-- {foreach from=$city_list item=city} -->
+						                        <option value="{$city.region_id}" {if $order.city eq $city.region_id}
+						                        selected{/if}>{$city.region_name}</option>
+						                        <!-- {/foreach} -->
+						                    </select>
+										</div>
+									</div>
+									
+									<!--<ul class="dis-box" id="selDistricts_{$sn}_box" {if !$district_list.$sn}style="" {/if}>
 										<li class="n-left-cont">城市：</li>
 										<li class="box-flex">
 											<span>    
@@ -286,8 +340,23 @@
 	                      </span>
 
 										</li>
-									</ul>
-									<ul class="n-addr-box dis-box">
+									</ul>-->
+									
+									<div class="flex-row column_padding border_line" id="selDistricts_{$sn}_box" {if !$district_list.$sn}style="" {/if}>
+										<div class="flex-item">
+											<span class="form-title">区/县</span>
+										</div>
+										<div class="flex-item">
+											<select name="district" id="selDistricts_{$sn}">                    
+						                        <option value="0">{$lang.please_select}{$name_of_region[3]}</option>
+						                        <!-- {foreach from=$district_list item=district} -->
+						                        <option value="{$district.region_id}" {if $order.district eq $district.region_id}selected{/if}>{$district.region_name}</option>
+						                        <!-- {/foreach} -->
+						                    </select>
+										</div>
+									</div>
+									
+									<!--<ul class="dis-box">
 										<li class="n-left-cont">区/县：</li>
 										<li class="box-flex">
 											<span>    
@@ -302,15 +371,24 @@
 	                      </span>
 
 										</li>
-									</ul>
+									</ul>-->
+									
+									<div class="flex-row column_padding border_line" id="selDistricts_{$sn}_box" {if !$district_list.$sn}style="" {/if}>
+										<div class="flex-item">
+											<span class="form-title">{$lang.detailed_address}</span>
+										</div>
+										<div class="flex-item n-addr-textarea">
+											<textarea name="address" placeholder="{$lang.detailed_address}{$lang.require_field}" type="text">{$order.address}</textarea>
+										</div>
+									</div>
 
-									<ul class="n-addr-box dis-box">
+									<!--<ul class="dis-box">
 										<li class="n-left-cont">{$lang.detailed_address}：</li>
 										<li class="box-flex n-addr-textarea"><textarea name="address" placeholder="{$lang.detailed_address}{$lang.require_field}" type="text">{$order.address}</textarea></li>
-									</ul>
+									</ul>-->
 								</div>
 								<!--收货地址S-->
-								<div class="padding-all n-user-after-z">
+								<div class="padding-all n-user-after-z" style="margin-bottom: 65px;">
 									注：如您修改地址，请您确认上方"省、市、县"是否需要修改。
 								</div>
 

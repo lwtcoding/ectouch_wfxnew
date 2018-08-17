@@ -2925,3 +2925,32 @@ span.t-jiantou{position:relative;font-size:1.5rem;padding-right:1.3rem;margin-to
 .row_padding{
 	padding: 10px 0;
 }
+.column_padding{
+	padding: 0 10px;
+}
+.webuploader-container label{
+	text-align: center;
+}
+.new-panel{
+	padding: 0;
+}
+.new-panel .row{
+	background-color: #fff;
+}
+.form-title{
+	font-size: 1.6rem;
+	color: #696969;
+}
+.p-img ul:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+.p-img ul li{
+	float: left;
+	width: 25%;
+}
+.p-img ul li img{
+	max-width: 100%;
+	height: auto;
+}

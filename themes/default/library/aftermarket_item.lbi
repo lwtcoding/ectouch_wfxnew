@@ -9,7 +9,7 @@
       </div>
       <div class="msg-info"> <s class="arrow"></s>
         <div class="title">
-          <div class="itm">{$action.return_status}</div>
+          <div class="itm">{$action.return_status}，</div>
           <div class="itm">{$action.refund_status}</div>
         </div>
         <div class="cutoff-line"></div>
