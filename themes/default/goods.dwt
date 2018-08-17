@@ -64,7 +64,7 @@
 			<!--商品描述-->
 			<section class="goods-title b-color-f padding-all ">
 				<div class="dis-box">
-					<h3 class="box-flex">{$goods.goods_style_name}</h3>
+					<h3 class="box-flex" style="height: auto;">{$goods.goods_style_name}</h3>
 					<!--点击收藏-->
 					<span class="heart j-heart <!--{if $sc eq 1}-->active<!--{/if}-->" onClick="collect({$goods.goods_id})" id='ECS_COLLECT'><i class="ts-2"></i><em class="ts-2">{$lang.btn_collect}</em></span>
 				</div>

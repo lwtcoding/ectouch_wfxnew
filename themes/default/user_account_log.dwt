@@ -1,6 +1,6 @@
 <!-- #BeginLibraryItem "/library/new_page_header.lbi" -->
 <!-- #EndLibraryItem -->
-<header class="dis-box header-menu b-color color-whie"><a class="" href="javascript:history.go(-1)"><i class="iconfont icon-jiantou"></i></a>
+<header class="dis-box header-menu b-color color-whie"><a class="" href="{:url('user/account_detail')}"><i class="iconfont icon-jiantou"></i></a>
 	<h3 class="box-flex">申请记录</h3>
 	<p><i class="iconfont icon-pailie j-nav-box"></i></p>
 </header>

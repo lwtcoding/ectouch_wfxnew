@@ -5306,18 +5306,17 @@ body.active,
 }
 
 .single_item h4 {
-	font-size: 1rem;
+	font-size: 1.2rem;
 	font-weight: normal;
 	font-stretch: normal;
 	line-height: 1rem;
 	letter-spacing: 0rem;
-	line-height: 1.9rem;
+	line-height: 1.4rem;
 	overflow: hidden;
 	font-weight: 400;
 	margin-top: 0.6rem;
-	white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  	overflow: hidden;
+  	height: 2.8rem;
 }
 
 .single_item .product-div {

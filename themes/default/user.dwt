@@ -120,7 +120,7 @@
 		</ul>
 	</section>
 	<section class="m-top10 my-nav-box b-color-f">
-		<a href="{:url('user/account_detail')};">
+		<a href="{:url('user/account_detail')}">
 			<div class="dis-box padding-all my-bottom">
 				<h3 class="box-flex text-all-span my-u-title-size"><i class="iconfont icon-qianbao is-user-size my-qianbao-color"></i>我的钱包</h3>
 				<div class="box-flex t-goods1 text-right onelist-hidden jian-top"><!--{if $list.user_money neq ''}--> {$list.user_money}<!--{else}-->0<!--{/if}--></div>
@@ -177,7 +177,7 @@
 				<div class="dis-box padding-all">
 					<h3 class="box-flex text-all-span my-u-title-size">
 						<i class="iconfont icon-dianpu"></i>
-			        	微店管理
+			        	我的代理
 					</h3>
 					<span class="t-jiantou"><i class="iconfont icon-jiantou tf-180 jian-top"></i></span>
 				</div>

@@ -2,7 +2,7 @@
 <!-- #EndLibraryItem -->
 <div class="con m-b7 new-maxbox">
 	<header class="header-max-box">
-		{if !$subscribe}
+		<!--{if !$subscribe}
 		<div class="ect-header-banner dis-box">
 			<div class="box-flex">
 				<div class="ect-header-text fl">
@@ -17,7 +17,7 @@
 			<p class="text-c">长按二维码关注公众微信</p>
 		</div>
 		<div class="index-bg-box"></div>
-		{/if}
+		{/if}-->
 	</header>
 	<div class="index-banner swiper-container box position-rel banner-first">
 				<div class="index-nav-box">

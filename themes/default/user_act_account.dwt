@@ -1,7 +1,7 @@
 <!-- #BeginLibraryItem "/library/new_page_header.lbi" -->
 <!-- #EndLibraryItem -->
 <div class="con">
-	<header class="dis-box header-menu b-color color-whie"><a class="" href="javascript:history.go(-1)"><i class="iconfont icon-jiantou"></i></a>
+	<header class="dis-box header-menu b-color color-whie"><a class="" href="{:url('user/account_detail')}"><i class="iconfont icon-jiantou"></i></a>
 		<h3 class="box-flex">充值中心</h3>
 		<p><i class="iconfont icon-pailie j-nav-box"></i></p>
 	</header>

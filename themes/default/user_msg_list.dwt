@@ -3,7 +3,7 @@
 <!-- #EndLibraryItem -->
 <header class="dis-box header-menu b-color color-whie"><a class="" href="javascript:history.go(-1)"><i class="iconfont icon-jiantou"></i></a>
 	<h3 class="box-flex">消息中心</h3>
-	<!--<p><i class="iconfont icon-pailie j-nav-box"></i></p>-->
+	<p style="display: block;"><i class="iconfont icon-pailie j-nav-box"></i></p>
 </header>
 <div class="j-nav-content">
 	<ul class="dis-box new-footer-box">
