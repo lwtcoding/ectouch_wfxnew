@@ -74,7 +74,11 @@ class GoodsController extends CommonController
             $this->assign('promote_end_time', $goods ['gmt_end_time']);
             // 获得商品的规格和属性
             $properties = model('Goods')->get_goods_properties($this->goods_id);
+            $props = model('Goods')->get_good_props($this->goods_id);
+//          var_dump($props);
             // 商品属性
+            $this->assign('props', $props);
+            
             $this->assign('properties', $properties ['pro']);
             // 商品规格
             $this->assign('specification', $properties ['spe']);

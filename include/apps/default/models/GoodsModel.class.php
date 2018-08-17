@@ -126,6 +126,15 @@ class GoodsModel extends BaseModel {
      * @param   integer $goods_id
      * @return  array
      */
+    function get_good_props($goods_id){
+    	$sql = "SELECT goods_weight, goods_brief FROM ecs_goods WHERE goods_id = '$goods_id'";
+    	$res = $this->query($sql);
+    	
+    	$arr['goods_weight'] = $res[0]['goods_weight'];
+    	$arr['goods_brief'] = $res[0]['goods_brief'];
+    	return $arr;
+    }
+    
     function get_goods_properties($goods_id) {
         /* 对属性进行重新排序和分组 */
         $sql = "SELECT attr_group " .
