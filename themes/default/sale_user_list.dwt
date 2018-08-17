@@ -1,5 +1,9 @@
 <!-- #BeginLibraryItem "/library/sale_header.lbi" --><!-- #EndLibraryItem -->
 <body class="n-hs-bg">
+<header class="dis-box header-menu b-color color-whie">
+	<a href="{if $title neq '消息中心'} javascript:history.go(-1) {else}{:url('user/index')}{/if}"><i class="iconfont icon-jiantou"></i></a>
+	<h3 class="box-flex">{$title}</h3>
+</header>
 	<div id="box">
 		<!--{foreach from=$info.list item=li}-->	       		
 		<ul class="dis-box padding-all n-b-b n-bs-f n-user-box2">

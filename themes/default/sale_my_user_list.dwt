@@ -1,5 +1,6 @@
 <!-- #BeginLibraryItem "/library/sale_header.lbi" --><!-- #EndLibraryItem -->
 <body class="n-hs-bg">
+
 <div id="box">
 
     <!--{foreach from=$list item=li}-->

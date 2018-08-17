@@ -1527,3 +1527,6 @@ span.t-jiantou i.icon-jiantou1.current{
 .just-content_center{
 	justify-content: center;
 }
+.header-menu a{
+	margin-left: 10px;
+}

@@ -25,7 +25,7 @@
 					<h4>{{vo.goods_name}}</h4>
 					<p class="dis-box p-t-remark"><span class="box-flex">库存：{{vo.goods_number}}{$category.measure_unit}</span><!--<span class="box-flex">销量：{{vo.sales_count}}{$category.measure_unit}</span>--></p>
 					<p><span class="p-price t-first ">{{vo.shop_price}}<small><del>{{vo.market_price}}</del></small></span></p>
-					<a href="javascript:addCart({{vo.goods_id}})" class="icon-flow-cart fr j-goods-attr" style="display:None"><i class="iconfont icon-gouwuche"></i></a>
+					<!--<a href="javascript:addCart({{vo.goods_id}})" class="icon-flow-cart fr j-goods-attr" style="display:None"><i class="iconfont icon-gouwuche"></i></a>-->
 				</div>
 			</div>
 		</li>

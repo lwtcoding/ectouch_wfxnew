@@ -7,7 +7,7 @@
 			<div class="category">
 				<section class="search">
 					<div class="text-all dis-box j-text-all text-all-back">
-						<a class="a-icon-back j-close-search" href="javascript:history.go(-1)"><i class="iconfont icon-jiantou is-left-font"></i></a>
+						<a class="a-icon-back j-close-search" href="{:url('category/top_all')}"><i class="iconfont icon-jiantou is-left-font"></i></a>
 						<div class="box-flex input-text n-input-text i-search-input">
 							<a class="a-search-input j-search-input" href="javascript:void(0)"></a>
 							<i class="iconfont icon-sousuo"></i>
