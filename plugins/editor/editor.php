@@ -10,6 +10,14 @@
 <style type="text/css">
 body {margin:0px; padding:0px;}
 #container {width:640px; height:400px;}
+.edui-editor{
+	min-width: 640px;
+	min-height:400px;
+}
+.edui-editor-iframeholder{
+	min-width: 640px;
+	min-height:400px;
+}
 </style>
 </head>
 
@@ -23,6 +31,7 @@ editor.addListener('ready', function() {
   $('#detail-table', parent.document).hide();//先显示再隐藏编辑器，兼容部分浏览在display:none时无法创建的问题
   var content = cBox.val();
   editor.setContent(content);
+  // $('#detail-table', parent.document).show();
 });
 //editor.addListener("contentChange", function(){setSync()});//触发同步
 $(function(){
