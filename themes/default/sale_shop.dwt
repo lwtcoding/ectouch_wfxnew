@@ -28,7 +28,7 @@
 </head>
 <body>
 <div class="con">
-<div class="index-max-box">
+<!--<div class="index-max-box">
 {if !$subscribe}
 <div class="ect-attention dis-box" >
 	<div class="attention-text box-flex">
@@ -40,7 +40,7 @@
 	</div>
 </div>
 {/if}
-</div>
+</div>-->
 
 <div class="index-main comWidth" >
 <div class="share-div">
