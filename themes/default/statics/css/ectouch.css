@@ -766,9 +766,23 @@ a.a-sequence .iconfont.icon-icon-square:before{font-size:3.2rem;}
 .goods-evaluation-page .g-e-p-pic li:last-of-type{margin-right:0;}
 .goods-evaluation-page .g-e-p-pic img{width:100%;}
 /*悬浮btn*/
-.filter-btn{max-width: 640px;margin: 0 auto;position: fixed; width:100%; left:0; right:0; bottom:0; box-sizing: border-box; padding:.8rem; z-index: 6; background:#fafafc; border-top:1px solid #efefef;}
+.filter-btn{
+	display: flex;
+	max-width: 640px;
+	margin: 0 auto;
+	position: fixed; 
+	width:100%; 
+	left:0; 
+	right:0; 
+	bottom:0; 
+	box-sizing: border-box; 
+	padding:0; 
+	z-index: 6; 
+	background:#fafafc; 
+	border-top:1px solid #efefef;
+}
 
-.filter-btn .filter-btn-a{padding:0 .4rem;  display: block; text-align: center; position: relative;}
+.filter-btn .filter-btn-a{padding:0 1.2rem;  display: block; text-align: center; position: relative;}
 .filter-btn .filter-btn-a i{font-size:2.2rem; color:#777; display:block; color:#636363}
 .filter-btn .filter-btn-flow sup{position:absolute; top:-.3rem; right:.4rem; height:1.5rem; min-width:1.5rem; line-height: 1.5rem;  padding:0 .2rem; box-sizing:border-box; font-size:1.3rem; color:#fff; border-radius: .7rem;}
 .filter-btn .filter-btn-a i.icon-gouwuche em{position:absolute; top: 0; right:0; display: block; min-width: 1.3rem; height:1.3rem; line-height:1.3rem; padding:.1rem .3rem; font-size:1.1rem; border-radius: .8rem; box-sizing: border-box; color:#fff;}
@@ -2958,3 +2972,13 @@ span.t-jiantou{position:relative;font-size:1.5rem;padding-right:1.3rem;margin-to
 	display: none;
 }
 .p-price{color: #FF2D55;}
+.btn-cart{
+	background: #343437;
+    border: 0;
+	border-radius: 0;
+}
+.btn-submit {
+	border-radius: 0;
+    background: #ff2d55;
+    border: 0;
+}
