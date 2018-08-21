@@ -3,6 +3,6 @@
 	<a href="{:url('flow/cart')}" class="filter-btn-flow filter-btn-a"><i class="iconfont icon-gouwuche"></i><sup class="b-color" id='total_number'><!--{if $seller_cart_total_number }-->{$seller_cart_total_number}<!--{else}-->0<!--{/if}--></sup><em>购物车</em></a>
 	<div class="flex-item flex-row">
 		<a type="button" class="btn-cart flex-item n-iphone5-top1 j-goods-attr j-show-div" style="padding: 1.2rem 0;">加入购物车</a>
-		<a type="button" class="btn-submit flex-item n-iphone5-top1 j-goods-attr j-show-div" style="padding: 1.2rem 0;">立即购买</a>
+		<a type="button" class="btn-submit btn-buy flex-item n-iphone5-top1 j-goods-attr j-show-div" style="padding: 1.2rem 0;">立即购买</a>
 	</div>
 </div>
