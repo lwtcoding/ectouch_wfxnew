@@ -217,7 +217,7 @@ label.admin-text{color:#999;}
 .t-two{color: #f4a213}/*黄色 － 与购物车按钮背景色一致*/
 .t-remark,
 .t-remark:link,
-.t-remark a:link,.t-remark a{color: #777;font-size: 1.5rem; }/*文本备注文字颜色*/
+.t-remark a:link,.t-remark a{color: #343437;font-size: 1.5rem; }/*文本备注文字颜色*/
 .t-remark2 {color: #444;font-size: 1.6rem;}/*主要文本连接*/
 .a-first:link {color: #1cbb7f}/*主连接*/
 .a-first:visited {color: #1cbb7f}
@@ -2989,4 +2989,15 @@ span.t-jiantou{position:relative;font-size:1.5rem;padding-right:1.3rem;margin-to
 	text-align: center;
 	left: 0;
 	height: 100%;
+}
+.header-menu a:nth-child(3){
+	display: none;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+	color: rgba(112,112,112,0.5);
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	color: rgba(112,112,112,0.5);
 }

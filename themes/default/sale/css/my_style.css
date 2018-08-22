@@ -1531,8 +1531,11 @@ span.t-jiantou i.icon-jiantou1.current{
 .header-menu a{
 	position: absolute;
 	width: 20px;
-	left: 0;
 	padding: 0 15px;
 	text-align: center;
+	left: 0;
 	height: 100%;
+}
+.header-menu a:nth-child(3){
+	display: none;
 }

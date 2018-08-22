@@ -59,7 +59,7 @@
 					买家：{$item.user_name}
 				</div>
 				<div class="flex-item f-08">
-					合计：{$item.log.user_money}元
+					合计：{$item.total_fee}
 				</div>
 			</div>
 			<!--<a href="{:url('sale/goods_detai',array('order_id'=>$this->_var['item']['order_id']))}">

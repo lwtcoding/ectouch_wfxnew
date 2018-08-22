@@ -19,11 +19,11 @@
 	</div>
 	<form action="{:url('user/act_account')}" method="post" name="theForm">
 		<div class="user-recharge b-color-f m-top10">
-			<section class="m-top1px margin-lr">
-				<div class="text-all dis-box j-text-all">
+			<section class="m-top1px padding-tb margin-lr" style="border-bottom: 1px solid #e1e1e1;">
+				<div class="f-c-select-msg">
 					<label class="t-remark">{$lang.repay_money}</label>
-					<div class="box-flex input-text">
-						<input name="amount" placeholder="{$lang.repay_money}" type="text" class="j-input-text" value="{$order.amount|escape}" />
+					<div class="text-area12 m-top04">
+						<input name="amount" placeholder="输入{$lang.repay_money}" type="text" class="j-input-text" value="{$order.amount|escape}" />
 					</div>
 				</div>
 			</section>
@@ -31,7 +31,10 @@
 				<div class="f-c-select-msg">
 					<label class="t-remark">{$lang.process_notic}<span class="t-remark">（50字）</span></label>
 					<div class="text-area12 m-top04">
+						<!--
 						<input name="user_note" placeholder="{$lang.process_notic}" type="text" class="j-input-text" value="{$order.user_note|escape}" />
+						-->
+						<input name="user_note" placeholder="格式：XX银行XX支行+6200012341234123" type="text" class="j-input-text" value="{$order.user_note|escape}" />
 					</div>
 				</div>
 			</section>
