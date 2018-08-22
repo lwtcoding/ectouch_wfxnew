@@ -226,7 +226,7 @@ class MY_FlowController extends FlowController {
                 $order ['surplus'] = 0;
             }
             if ($order ['order_amount'] > ($user_info ['user_money'] + $user_info ['credit_line'])) {
-                show_message(L('balance_not_enough'));
+                show_message('余额不足请充值','去充值',url('user/account_deposit'));
             } else {
                 $order ['surplus'] = $order ['order_amount'];
                 $order ['order_amount'] = 0;
