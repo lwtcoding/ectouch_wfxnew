@@ -36,7 +36,7 @@
 					<div class="flex-content">
 						<!-- {foreach from=$shipping_list item=shipping} 循环配送方式 -->
 						<div class="ect-radio">
-							<input name="shipping" type="radio" id="shipping_{$shipping.shipping_id}" value="{$shipping.shipping_id}" {if $order.shipping_id eq $shipping.shipping_id}checked="true" {/if} supportCod="{$shipping.support_cod}" insure="{$shipping.insure}" onclick="selectShipping(this)">
+							<input name="shipping" type="radio" id="shipping_{$shipping.shipping_id}" value="{$shipping.shipping_id}" {if $order.shipping_id eq $shipping.shipping_id} checked="true" {/if}  checked="true" supportCod="{$shipping.support_cod}" insure="{$shipping.insure}" onclick="selectShipping(this)">
 							<label for="shipping_{$shipping.shipping_id}">{$shipping.shipping_name} [{$shipping.format_shipping_fee}]<i></i></label>
 						</div>
 						<!-- {/foreach} 循环配送方式 -->
@@ -74,7 +74,7 @@
 					<div class="flex-content">
 						<!-- {foreach from=$payment_list item=payment} -->
 						<div class="ect-radio">
-							<input name="payment" type="radio" id="payment_{$payment.pay_id}" value="{$payment.pay_id}" {if $order.pay_id eq $payment.pay_id}checked{/if} isCod="{$payment.is_cod}" onclick="selectPayment(this)" {if $cod_disabled and $payment.is_cod eq "1"}disabled="true" {/if} style="vertical-align:middle">
+							<input name="payment" type="radio" id="payment_{$payment.pay_id}" value="{$payment.pay_id}" {if $order.pay_id eq $payment.pay_id}checked{/if} checked="true" isCod="{$payment.is_cod}" onclick="selectPayment(this)" {if $cod_disabled and $payment.is_cod eq "1"}disabled="true" {/if} style="vertical-align:middle">
 							<label for="payment_{$payment.pay_id}">{$payment.pay_name} [{$payment.format_pay_fee}]<i></i></label>
 						</div>
 						<!-- {/foreach} -->

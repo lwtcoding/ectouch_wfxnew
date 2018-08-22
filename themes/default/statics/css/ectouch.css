@@ -3001,3 +3001,6 @@ input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
 	color: rgba(112,112,112,0.5);
 }
+.menu-right h5{
+	font-weight: bold;	
+}

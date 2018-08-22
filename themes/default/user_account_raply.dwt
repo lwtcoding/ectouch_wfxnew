@@ -22,7 +22,7 @@
 			<section class="m-top1px padding-tb margin-lr" style="border-bottom: 1px solid #e1e1e1;">
 				<div class="f-c-select-msg">
 					<label class="t-remark">{$lang.repay_money}</label>
-					<div class="text-area12 m-top04">
+					<div class="m-top04">
 						<input name="amount" placeholder="输入{$lang.repay_money}" type="text" class="j-input-text" value="{$order.amount|escape}" />
 					</div>
 				</div>
