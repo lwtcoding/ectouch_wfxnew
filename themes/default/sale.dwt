@@ -101,7 +101,15 @@
 				</div>
 			</a>-->
 			<!--分类4-->
-			<ul class="int-nav-box-b my-new-m padding-all shop-b">
+			<a href="{:url('sale/user_list',array('key'=>'fk'))}">
+				<ul class="int-nav-box-1 my-new-m padding-all shop-b">
+					<li>
+						<label class="cate-shop-box"><i class="iconfont icon-gonggaofuzhi a_left n-is--icont-1"></i><span>我的会员</span></label>
+						<span class="t-jiantou f-r"><i class="iconfont icon-jiantou1 tf-180 jian-top"></i></span>
+					</li>
+				</ul>
+			</a>
+			<!--<ul class="int-nav-box-b my-new-m padding-all shop-b">
 				<li>
 					<label class="cate-shop-box"><i class="iconfont icon-gonggaofuzhi a_left n-is--icont-1"></i><span>我的会员</span></label>
 					<span class="t-jiantou fr n-sect-i"><i class="iconfont icon-jiantou1 tf-180 jian-top int-jt-box"></i></span>
@@ -117,16 +125,16 @@
 					<lable class="two-shop-tit">下单已付款会员</lable>				
 				</div>
 			</a>
-			<!--<a href="{:url('sale/user_list',array('key'=>'gz'))}">
+			<a href="{:url('sale/user_list',array('key'=>'gz'))}">
 				<div class="int-cont-b padding-all shop-b" style="display: none;">
 					<lable class="two-shop-tit">关注公众号会员</lable>				
 				</div>
-			</a>-->
+			</a>
 			<a href="{:url('sale/user_list',array('key'=>'fk'))}">
 				<div class="int-cont-b padding-all shop-b" style="display: none;">
 					<lable class="two-shop-tit">访客</lable>				
 				</div>
-			</a>
+			</a>-->
 
 			<!--分类5-->
 			<!--<ul class="int-nav-box-c my-new-m padding-all shop-b">
@@ -153,7 +161,15 @@
 			</a>-->
 
 			<!--分类6-->
-			<ul class="int-nav-box-d my-new-m padding-all shop-b">
+			<a href="{:url('sale/store')}">
+				<ul class="int-nav-box-1 my-new-m padding-all shop-b">
+					<li>
+						<label class="cate-shop-box"><i class="iconfont icon-mingpian a_left n-is--icont-3"></i><span>我的二维码</span></label>
+						<span class="t-jiantou f-r"><i class="iconfont icon-jiantou1 tf-180 jian-top"></i></span>
+					</li>
+				</ul>
+			</a>
+			<!--<ul class="int-nav-box-d my-new-m padding-all shop-b">
 				<li>
 					<label class="cate-shop-box"><i class="iconfont icon-mingpian a_left n-is--icont-3"></i><span>我的名片</span></label>
 					<span class="t-jiantou fr n-sect-i"><i class="iconfont icon-jiantou1 tf-180 jian-top int-jt-box"></i></span>
@@ -168,7 +184,7 @@
 				<div class="int-cont-d padding-all shop-b" style="display: none;">
 					<lable class="two-shop-tit">店铺二维码</lable>				
 				</div>
-			</a>
+			</a>-->
 			<!--分类7-->
 			<!--<a href="{:url('sale/ranking_list')}">
 				<ul class="int-nav-box-1 my-new-m padding-all shop-b">

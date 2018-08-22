@@ -1488,6 +1488,7 @@ span.t-jiantou i.icon-jiantou1.current{
     background-size: 18em;
 }
 .header-menu {
+	position: relative;
     height: 4.6rem;
     line-height: 4.6rem;
     padding: 0 0.5rem;
@@ -1528,5 +1529,10 @@ span.t-jiantou i.icon-jiantou1.current{
 	justify-content: center;
 }
 .header-menu a{
-	margin-left: 10px;
+	position: absolute;
+	width: 20px;
+	left: 0;
+	padding: 0 15px;
+	text-align: center;
+	height: 100%;
 }
