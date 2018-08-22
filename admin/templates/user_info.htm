@@ -154,7 +154,9 @@
   {if $user.parent_id}
   <tr>
     <td class="label">{$lang.parent_user}:</td>
-    <td><a href="users.php?act=edit&id={$user.parent_id}">{$user.parent_username}</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="users.php?act=remove_parent&id={$user.user_id}">{$lang.parent_remove}</a></td>
+    <td><a href="users.php?act=edit&id={$user.parent_id}">{$user.parent_username}</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    	<!--<a href="users.php?act=remove_parent&id={$user.user_id}">{$lang.parent_remove}</a>-->
+    </td>
   </tr>
   {/if}
   {if $affiliate.on eq 1 && $affdb}
