@@ -6,19 +6,23 @@
 </header>
 
 	<form name="formEdit" action="{:url('user/user_vip_apply')}" method="post" >
-		<section class="flow-consignee ect-bg-colorf s-user-top onclik-admin">
-			<p style="font-size: 1.4rem;padding: 10px 0;">感谢您对我们平台的信任与支持，您正在进行操作的是申请成为我们平台的加盟商。成为加盟商可以获取到平台提供的更低折扣。</p>
-		</section>
-		<input name="act" type="hidden" value="profile" />
 		{if $show_btn}
-		<div class=" ect-padding-tb padding-all">
-			<button name="submit" type="submit" class="btn-submit" value="{$lang.confirm_edit}">确认申请</button>
-		</div>
+			<section class="flow-consignee ect-bg-colorf s-user-top onclik-admin">
+				<p style="font-size: 1.4rem;padding: 10px 0;">感谢您对我们平台的信任与支持，您正在进行操作的是申请成为我们平台的加盟商。成为加盟商可以获取到平台提供的更低折扣。</p>
+			</section>
+			<input name="act" type="hidden" value="profile" />
+			
+			<div class=" ect-padding-tb padding-all">
+				<button name="submit" type="submit" class="btn-submit" value="{$lang.confirm_edit}">确认申请</button>
+			</div>
 		{else}
-			<p style="text-align: center;padding: 15px 0;">正在审核中，请耐心等待</p>
+			<div style="padding: 30px;margin-bottom: 15px;" class="bg-white">
+				<p style="padding: 15px 0;text-align: center;">正在审核中，请耐心等待</p>
+				<p style="padding: 5px 0;font-size: 1.4rem;">若审核通过，您将无法进入当前页面，请重新登录以获取最新的会员等级</p>
+				<p style="padding: 5px 0;font-size: 1.4rem;">若审核不通过，请进入此页面重新提交申请</p>
+			</div>
 		{/if}
 	</form>
-
 </div>
 
 <!-- #BeginLibraryItem "/library/new_search.lbi" -->

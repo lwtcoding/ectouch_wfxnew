@@ -9,6 +9,8 @@
 	<link rel="stylesheet" type="text/css" href="__TPL__/css/search_index.css"/>
 	<link rel="stylesheet" href="__PUBLIC__/bootstrap/css/font-awesome.min.css">
 	<link rel="stylesheet" href="__TPL__/statics/css/search.css" />
+	<link rel="icon" href="__TPL__/statics/img/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="__TPL__/statics/img/favicon.ico" type="image/x-icon">
     <script type="text/javascript">var tpl = '__TPL__';</script>
     <style>
     .search {position: relative;padding:0;}

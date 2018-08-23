@@ -685,10 +685,10 @@ a.a-sequence .iconfont.icon-icon-square:before{font-size:3.2rem;}
 .goods-title{padding-bottom:.8rem;}
 .goods-title h3{font-size:1.8rem; height:4.3rem; overflow: hidden; line-height: 1.3; padding-right:1.3rem; border-right:1px solid #efefef;}
 .heart{display:block; width:4rem; height:4rem; padding-left:1.3rem;}
-.heart i{display:block; width: 2.8rem; height:2.8rem; margin:0 auto; background:url(../img/heart_03.png) 0 100% no-repeat; background-size:2.7rem 5.4rem;}
+.heart i{display:block; width: 2.8rem; height:2.8rem; margin:0 auto; background:url(../img/ic_favorite_border_24px@2x.png) 0 100% no-repeat; background-size:cover;}
 .heart em{font-size:1.3rem; display:block; text-align: center; margin-top:.2rem; color:#555;}
 .heart.active em{color:#1cbb7f}
-.heart.active i{ background:url(../img/heart_03.png) 0 0 no-repeat; background-size:2.7rem 5.4rem;}
+.heart.active i{ background:url(../img/ic_favorite_24px@2x.png) 0 0 no-repeat; background-size:cover;}
 /*价格*/
 .goods-price{padding-top:0; }
 .g-p-tthree{font-size:1.5rem; color:#999;}

@@ -443,6 +443,8 @@ class SaleController extends CommonController {
             }
 
             // 生成海报图片
+            
+            
             $img = file_get_contents($bg_img);
             file_put_contents($dp_img,$img);
             chmod(ROOT_PATH.$dp_img, 0777);
