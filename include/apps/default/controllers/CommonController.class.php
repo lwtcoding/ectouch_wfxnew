@@ -34,7 +34,8 @@ class CommonController extends BaseController
         parent::__construct();
         $this->ecshop_init();
         // 微信oauth处理
-        if(class_exists('WechatController')){
+
+        if(class_exists('WechatController') && empty($_SESSION['openid'])){
             if (method_exists('WechatController', 'snsapi_base')) {
                 call_user_func(array('WechatController', 'snsapi_base'));
                 /*DRP_START*/
