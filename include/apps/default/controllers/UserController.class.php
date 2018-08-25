@@ -2180,8 +2180,8 @@ class UserController extends CommonController {
         if ($_GET['code'] && $_GET['code'] != '') {
             // 授权成功 返回登录
             if ($url = $obj->call_back($info, $_GET['backurl'], $_GET['code'], $type)) {
-//                $url = empty($url) ? url('index/index') : $url;
-                $url = url('index/index');
+                $url = empty($url) ? url('index/index') : $url;
+                //$url = url('index/index');
                 $this->redirect($url);
             } else {
                 show_message(L('process_false'), L('relogin_lnk'), url('login', array('referer' => urlencode($this->back_act))), 'error');
