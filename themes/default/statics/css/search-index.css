@@ -89,7 +89,7 @@ a.btn-reset,a.btn-default{color:#555;}
 .ipt-check-btn:link.disabled{color:#999}
 .ipt-check-btn:visited.disabled,.ip-check-btn:active.disabled,.ip-check-btn:hover.disabled{color:#999}
 /*后带显示隐藏密码按钮*/
-.is-yanjing{font-size:2.4rem; padding:0 .2rem; color:#1CBB7F; height: 3rem; line-height: 3rem; margin-left:1rem;-webkit-transition: all 0.1s;
+.is-yanjing{font-size:2.4rem; padding:0 .2rem; color:#1CBB7F; height: 3rem; line-height: 3rem; margin-left:0;-webkit-transition: all 0.1s;
 	-moz-transition: all 0.1s;
 	-o-transition: all 0.1s;
 	transition: all 0.1s;}

@@ -223,7 +223,7 @@
 						</section>
 						<section class="ect-button-more dis-box padding-all">
 							<a class="btn-cart box-flex show-div-guanbi n-btn-box"  type="button" onClick="addToCart({$goods.goods_id});">加入购物车</a>
-							<a class="btn-submit box-flex" type="button" onClick="addToCart_quick({$goods.goods_id});">立即购买</a>
+							<a class="btn-submit btn-buy box-flex" type="button" onClick="addToCart_quick({$goods.goods_id});">立即购买</a>
 						</section>
 			</form>
 			</div>

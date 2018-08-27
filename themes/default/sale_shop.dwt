@@ -108,6 +108,7 @@
       </ul>
   </div>
 </div>
+</div>
 
 <!--悬浮菜单e-->
 <!-- #BeginLibraryItem "/library/shop_navbar.lbi" -->
@@ -130,7 +131,6 @@
         <i class="nav-box i-shop"></i><span>微店管理</span>
     </a>
 </footer>-->
-</div>
 <!-- #BeginLibraryItem "/library/new_search.lbi" --><!-- #EndLibraryItem -->
 <!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
 <script type="text/javascript">

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 html {
-	font-size: 18px;
+	font-size: 16px;
 	font-family: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", STXihei, STHeiti, "Microsoft YaHei", Heiti, SimSun, sans-serif;
 	-webkit-font-smoothing: antialiased;
 }
@@ -5309,7 +5309,6 @@ body.active,
 	font-size: 1.2rem;
 	font-weight: normal;
 	font-stretch: normal;
-	line-height: 1rem;
 	letter-spacing: 0rem;
 	line-height: 1.4rem;
 	overflow: hidden;

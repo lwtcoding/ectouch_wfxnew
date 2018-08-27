@@ -2,7 +2,7 @@
 <body class="n-hs-bg">
 <header class="dis-box header-menu b-color color-whie">
 	<a href="{if $title neq '消息中心'} javascript:history.go(-1) {else}{:url('user/index')}{/if}"><i class="iconfont icon-jiantou"></i></a>
-	<h3 class="box-flex">{$title}</h3>
+	<h3 class="box-flex"><!--<span>{$title}</span>-->我的会员</h3>
 </header>
 	<div id="box">
 		<!--{foreach from=$info.list item=li}-->	       		

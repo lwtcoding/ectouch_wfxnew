@@ -79,7 +79,7 @@ header{line-height:2rem}
     }
     .ect-index-info{
         position: absolute;
-        padding:0 1rem;
+        padding:0;
         top:0;
         bottom:0;
         top: 4rem;
@@ -91,7 +91,7 @@ header{line-height:2rem}
         width:100%;
         height:12.5rem;
     }
-    .ect-index-name{margin-top:0.3rem; color: #fff; position:absolute; bottom:1rem; color:#fff;font-size: 1rem; left:1rem;width: 100%;}
+    .ect-index-name{margin-top:0.3rem; color: #fff; position:absolute; bottom:1rem; color:#fff;font-size: 1rem; left:0;width: 100%;}
     .ect-index-name h1{font-weight: normal; font-size:1.3rem; color: #fff;text-align: center;}
     .ect-index-detail{text-align: left; display:block;  left: 0; width:6rem; height:6rem; position: absolute; bottom:-2rem; z-index: 999; left:1rem;}
     .ect-index-info .ect-index-detail img{
