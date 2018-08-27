@@ -131,99 +131,100 @@ class weixin {
      */
     public function update_weixin_user($userinfo, $wechat_id = 0, $weObj)
     {
-        $time = time();
-        $ret = model('Base')->model->table('wechat_user')->field('openid, ect_uid')->where('openid = "' . $userinfo['openid'] . '"')->find();
-        if(isset($ret['ect_uid']) && $ret['ect_uid'] == 0){
-            model('Base')->model->table('wechat_user')->where('openid = "' . $userinfo['openid'] . '"')->delete();
-        }
-        if (empty($ret) || empty($ret['ect_uid'])) {
-            //微信用户绑定会员id
-            $ect_uid = 0;
-            //查看公众号是否绑定
-            if($userinfo['unionid']){
-                $ect_uid = model('Base')->model->table('wechat_user')->field('ect_uid')->where(array('unionid'=>$userinfo['unionid']))->getOne();
-            }
-
-            //未绑定
-            if(empty($ect_uid)){
-                // 设置的用户注册信息
-                $register = model('Base')->model->table('wechat_extend')
-                    ->field('config')
-                    ->where('enable = 1 and command = "register_remind" and wechat_id = '.$wechat_id)
-                    ->find();
-                if (! empty($register)) {
-                    $reg_config = unserialize($register['config']);
-                    $username = msubstr($reg_config['user_pre'], 3, 0, 'utf-8', false) . time().mt_rand(1, 99);
-                    // 密码随机数
-                    $rs = array();
-                    $arr = range(0, 9);
-                    $reg_config['pwd_rand'] = $reg_config['pwd_rand'] ? $reg_config['pwd_rand'] : 3;
-                    for ($i = 0; $i < $reg_config['pwd_rand']; $i ++) {
-                        $rs[] = array_rand($arr);
-                    }
-                    $pwd_rand = implode('', $rs);
-                    // 密码
-                    $password = $reg_config['pwd_pre'] . $pwd_rand;
-                    // 通知模版
-                    $template = str_replace(array(
-                        '[$username]',
-                        '[$password]'
-                    ), array(
-                        $username,
-                        $password
-                    ), $reg_config['template']);
-                } else {
-                    $username = 'wx_' . time().mt_rand(1, 99);
-                    $password = 'ecmoban';
-                    // 通知模版
-                    $template = '默认用户名：' . $username . "\r\n" . '默认密码：' . $password;
-                }
-                // 会员注册
-                $domain = get_top_domain();
-                if (model('Users')->register($username, $password, $username . '@' . $domain, array('parent_id'=>intval($_GET['u']))) !== false) {
-                    model('Users')->update_user_info();
-                } else {
-                    die('授权失败，可能需要联系管理员开放会员注册。');
-                }
-                $data1['ect_uid'] = $_SESSION['user_id'];
-            }
-            else{
-                //已绑定
-                $username = model('Base')->model->table('users')->field('user_name')->where(array('user_id'=>$ect_uid))->getOne();
-                $template = '您已拥有帐号，用户名为'.$username;
-                $data1['ect_uid'] = $ect_uid;
-            }
-            
-            // 获取用户所在分组ID
-            $group_id = $weObj->getUserGroup($userinfo['openid']);
-            $group_id = $group_id ? $group_id : 0;
-
-            $data1['wechat_id'] = $wechat_id;
-            $data1['subscribe'] = 0;
-            $data1['openid'] = $userinfo['openid'];
-            $data1['nickname'] = $userinfo['nickname'];
-            $data1['sex'] = $userinfo['sex'];
-            $data1['city'] = $userinfo['city'];
-            $data1['country'] = $userinfo['country'];
-            $data1['province'] = $userinfo['province'];
-            $data1['language'] = $userinfo['country'];
-            $data1['headimgurl'] = $userinfo['headimgurl'];
-            $data1['subscribe_time'] = $time;
-            $data1['group_id'] = $group_id;
-            $data1['unionid'] = $userinfo['unionid'];
-            
-            model('Base')->model->table('wechat_user')->data($data1)->insert();
-        } else {
-            //开放平台有privilege字段,公众平台没有
-            unset($userinfo['privilege']);
-            model('Base')->model->table('wechat_user')->data($userinfo)->where(array('openid'=> $userinfo['openid']))->update();
-            $new_user_name = model('Base')->model->table('users')->field('user_name')->where(array('user_id'=>$ret['ect_uid']))->getOne();
-            ECTouch::user()->set_session($new_user_name);
-            ECTouch::user()->set_cookie($new_user_name);
-            model('Users')->update_user_info();
-        }
+//        $time = time();
+//        $ret = model('Base')->model->table('wechat_user')->field('openid, ect_uid')->where('openid = "' . $userinfo['openid'] . '"')->find();
+//        if(isset($ret['ect_uid']) && $ret['ect_uid'] == 0){
+//            model('Base')->model->table('wechat_user')->where('openid = "' . $userinfo['openid'] . '"')->delete();
+//        }
+//        if (empty($ret) || empty($ret['ect_uid'])) {
+//            //微信用户绑定会员id
+//            $ect_uid = 0;
+//            //查看公众号是否绑定
+//            if($userinfo['unionid']){
+//                $ect_uid = model('Base')->model->table('wechat_user')->field('ect_uid')->where(array('unionid'=>$userinfo['unionid']))->getOne();
+//            }
+//
+//            //未绑定
+//            if(empty($ect_uid)){
+//                // 设置的用户注册信息
+//                $register = model('Base')->model->table('wechat_extend')
+//                    ->field('config')
+//                    ->where('enable = 1 and command = "register_remind" and wechat_id = '.$wechat_id)
+//                    ->find();
+//                if (! empty($register)) {
+//                    $reg_config = unserialize($register['config']);
+//                    $username = msubstr($reg_config['user_pre'], 3, 0, 'utf-8', false) . time().mt_rand(1, 99);
+//                    // 密码随机数
+//                    $rs = array();
+//                    $arr = range(0, 9);
+//                    $reg_config['pwd_rand'] = $reg_config['pwd_rand'] ? $reg_config['pwd_rand'] : 3;
+//                    for ($i = 0; $i < $reg_config['pwd_rand']; $i ++) {
+//                        $rs[] = array_rand($arr);
+//                    }
+//                    $pwd_rand = implode('', $rs);
+//                    // 密码
+//                    $password = $reg_config['pwd_pre'] . $pwd_rand;
+//                    // 通知模版
+//                    $template = str_replace(array(
+//                        '[$username]',
+//                        '[$password]'
+//                    ), array(
+//                        $username,
+//                        $password
+//                    ), $reg_config['template']);
+//                } else {
+//                    $username = 'wx_' . time().mt_rand(1, 99);
+//                    $password = 'ecmoban';
+//                    // 通知模版
+//                    $template = '默认用户名：' . $username . "\r\n" . '默认密码：' . $password;
+//                }
+//                // 会员注册
+//                $domain = get_top_domain();
+//                if (model('Users')->register($username, $password, $username . '@' . $domain, array('parent_id'=>intval($_GET['u']))) !== false) {
+//                    model('Users')->update_user_info();
+//                } else {
+//                    die('授权失败，可能需要联系管理员开放会员注册。');
+//                }
+//                $data1['ect_uid'] = $_SESSION['user_id'];
+//            }
+//            else{
+//                //已绑定
+//                $username = model('Base')->model->table('users')->field('user_name')->where(array('user_id'=>$ect_uid))->getOne();
+//                $template = '您已拥有帐号，用户名为'.$username;
+//                $data1['ect_uid'] = $ect_uid;
+//            }
+//
+//            // 获取用户所在分组ID
+//            $group_id = $weObj->getUserGroup($userinfo['openid']);
+//            $group_id = $group_id ? $group_id : 0;
+//
+//            $data1['wechat_id'] = $wechat_id;
+//            $data1['subscribe'] = 0;
+//            $data1['openid'] = $userinfo['openid'];
+//            $data1['nickname'] = $userinfo['nickname'];
+//            $data1['sex'] = $userinfo['sex'];
+//            $data1['city'] = $userinfo['city'];
+//            $data1['country'] = $userinfo['country'];
+//            $data1['province'] = $userinfo['province'];
+//            $data1['language'] = $userinfo['country'];
+//            $data1['headimgurl'] = $userinfo['headimgurl'];
+//            $data1['subscribe_time'] = $time;
+//            $data1['group_id'] = $group_id;
+//            $data1['unionid'] = $userinfo['unionid'];
+//
+//            model('Base')->model->table('wechat_user')->data($data1)->insert();
+//        } else {
+//            //开放平台有privilege字段,公众平台没有
+//            unset($userinfo['privilege']);
+//            model('Base')->model->table('wechat_user')->data($userinfo)->where(array('openid'=> $userinfo['openid']))->update();
+//            $new_user_name = model('Base')->model->table('users')->field('user_name')->where(array('user_id'=>$ret['ect_uid']))->getOne();
+//            ECTouch::user()->set_session($new_user_name);
+//            ECTouch::user()->set_cookie($new_user_name);
+//            model('Users')->update_user_info();
+//        }
         $_SESSION['openid'] = $userinfo['openid'];
         setcookie('openid', $userinfo['openid'], gmtime() + 86400 * 7);
+
     }
 
 }

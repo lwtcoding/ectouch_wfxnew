@@ -355,40 +355,40 @@ elseif ($_REQUEST['act'] == 'action')
             }
             //退款
             //找openid
-            $wxuser = $db->getRow("SELECT * FROM " .$ecs->table('wechat_user'). " WHERE ect_uid = '$account[user_id]'");
-            $openid = null;
-            if ($wxuser) {
-                $openid = $wxuser['openid'];
-            }
-
-            $payment = $db->getRow("SELECT * FROM " .$ecs->table('payment'). " WHERE pay_code = 'wxpay'");
-            include_once (ROOT_PATH . 'plugins/payment/' . $payment ['pay_code'] . '.php');
-
-            $pay_obj = new $payment ['pay_code'] ();
-
-                if (is_string($payment ['pay_config']) && ($arr = unserialize($payment ['pay_config'])) !== false) {
-                    $config = array();
-
-                    foreach ($arr AS $key => $val) {
-                        $config[$val['name']] = $val['value'];
-                    }
-
-                    $payment ['pay_config'] = $config;
-                } else {
-                    $payment ['pay_config'] = false;
-                }
-
-            $res = $pay_obj->transfers(['amount'=>intval($fmt_amount*100),'openid'=>$openid], $payment ['pay_config']);
-                if ($res['code'] == 200) {
+//            $wxuser = $db->getRow("SELECT * FROM " .$ecs->table('wechat_user'). " WHERE ect_uid = '$account[user_id]'");
+//            $openid = null;
+//            if ($wxuser) {
+//                $openid = $wxuser['openid'];
+//            }
+//
+//            $payment = $db->getRow("SELECT * FROM " .$ecs->table('payment'). " WHERE pay_code = 'wxpay'");
+//            include_once (ROOT_PATH . 'plugins/payment/' . $payment ['pay_code'] . '.php');
+//
+//            $pay_obj = new $payment ['pay_code'] ();
+//
+//                if (is_string($payment ['pay_config']) && ($arr = unserialize($payment ['pay_config'])) !== false) {
+//                    $config = array();
+//
+//                    foreach ($arr AS $key => $val) {
+//                        $config[$val['name']] = $val['value'];
+//                    }
+//
+//                    $payment ['pay_config'] = $config;
+//                } else {
+//                    $payment ['pay_config'] = false;
+//                }
+//
+//            $res = $pay_obj->transfers(['amount'=>intval($fmt_amount*100),'openid'=>$openid], $payment ['pay_config']);
+//                if ($res['code'] == 200) {
                     update_user_account($id, $amount, $admin_note, $is_paid);
 
                     //更新会员余额数量
                     log_account_change($account['user_id'], $amount, 0, 0, 0, $_LANG['surplus_type_1'], ACT_DRAWING);
 
-                } else {
-                    $link[] = array('text' => $_LANG['go_back'], 'href'=>'javascript:history.back(-1)');
-                    sys_msg($res['msg'], 0, $link);
-                }
+//                } else {
+//                    $link[] = array('text' => $_LANG['go_back'], 'href'=>'javascript:history.back(-1)');
+//                    sys_msg($res['msg'], 0, $link);
+//                }
            }
         elseif ($is_paid == '1' && $account['process_type'] == '0')
         {

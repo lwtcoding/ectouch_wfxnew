@@ -27,7 +27,8 @@ class RespondController extends CommonController
         // 获取参数
         $this->data = array(
             'code' => I('get.code'),
-            'type' => I('get.type')
+            'type' => I('get.type'),
+            'status' => I('get.status'),
         );
 	}
 
