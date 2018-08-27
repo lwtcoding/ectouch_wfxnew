@@ -366,7 +366,7 @@ $_LANG['08_menu_template'] = '模板';
 $_LANG['09_menu_backup'] = '数据库';
 $_LANG['10_menu_tools'] = '工具箱';
 /*DRP_START*/
-$_LANG['11_menu_rec'] = '微分销';
+$_LANG['11_menu_rec'] = '代理';
 /*DRP_END*/
 $_LANG['12_menu_wechat'] = '微信通';
 
@@ -421,9 +421,9 @@ $_LANG['99_upgrade']         = '在线更新';
 
 /*DRP_START*/
 // 微分销
-$_LANG['01_drp_config'] = '微分销设置';
-$_LANG['02_drp_audit'] = '分销商审核';
-$_LANG['02_drp_users'] = '分销商管理';
+$_LANG['01_drp_config'] = '代理设置';
+$_LANG['02_drp_audit'] = '代理审核';
+$_LANG['02_drp_users'] = '代理管理';
 $_LANG['03_drp'] = '销售佣金设置';
 $_LANG['04_order_list'] = '销售订单管理';
 $_LANG['05_affiliate'] = '分成佣金设置';

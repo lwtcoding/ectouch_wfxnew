@@ -163,8 +163,8 @@ $_LANG['send_history']    = '发送记录';
 $_LANG['charge_history']  = '充值记录 ';
 
 /*DRP_START*/
-$_LANG['ext_fenxiao'] = '微分销';
-$_LANG['drp_config'] = '微分销设置';
+$_LANG['ext_fenxiao'] = '代理';
+$_LANG['drp_config'] = '代理设置';
 $_LANG['drp_audit'] = '分销商审核';
 $_LANG['drp_users'] = '分销商管理';
 $_LANG['drp_yongjin'] = '销售佣金设置';
