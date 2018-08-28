@@ -145,7 +145,7 @@ $_LANG['js_languages']['require_num'] =  '排序序号必须是一个数字';
 $_LANG['wait_check'] = '待审核';
 $_LANG['check_success'] ="审核成功,待退货";
 /* 服务订单状态 */
-$_LANG['rc'][RC_APPLY_FALSE] = '申请失败';
+$_LANG['rc'][RC_APPLY_FALSE] = '未审核';
 $_LANG['rc'][RC_APPLY_SUCCESS] = '申请成功';
 
 $_LANG['rf'][RF_APPLICATION] = '申请';

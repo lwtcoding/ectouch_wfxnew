@@ -330,8 +330,14 @@ class SaleModel extends BaseModel {
                     }
                 }
             }
-            $res['count'] = count($user_list);
-            $res['list'] = $user_list;
+            $fk_list = [];
+            foreach($user_list as $key=>$val){
+                if ($val['user_id']!=$_SESSION['user_id']){
+                    array_push($fk_list, $val);
+                }
+            }
+            $res['count'] = count($fk_list);
+            $res['list'] = $fk_list;
         }elseif($key == 'yfk'){
             // $sql = "SELECT user_id FROM {pre}order_info where user_id > 0 and pay_status = ".PS_PAYED." and parent_id = " . $_SESSION['user_id'] . " GROUP BY user_id";
             //判断上家是否总代理
@@ -352,8 +358,14 @@ class SaleModel extends BaseModel {
                     $user_list[$key] = $info;
                 }
             }
-            $res['count'] = count($user_list);
-            $res['list'] = $user_list;
+            $fk_list = [];
+            foreach($user_list as $key=>$val){
+                if ($val['user_id']!=$_SESSION['user_id']){
+                    array_push($fk_list, $val);
+                }
+            }
+            $res['count'] = count($fk_list);
+            $res['list'] = $fk_list;
         }elseif($key == 'gz'){
             // $sql = "SELECT user_id FROM {pre}users as u join {pre}wechat_user as w on u.user_id=w.ect_uid where u.user_id > 0 and w.subscribe = 1 and u.parent_id = " . $_SESSION['user_id'] . " GROUP BY user_id";
             $sql = "select * from {pre}admin_user where proxy_user = 1 and proxy_default = 1 and proxy_user_id = ".$_SESSION['user_id'];
@@ -372,8 +384,14 @@ class SaleModel extends BaseModel {
                     $user_list[$key] = $this->get_drp($val['user_id']);
                 }
             }
-            $res['count'] = count($user_list);
-            $res['list'] = $user_list;
+            $fk_list = [];
+            foreach($user_list as $key=>$val){
+                if ($val['user_id']!=$_SESSION['user_id']){
+                    array_push($fk_list, $val);
+                }
+            }
+            $res['count'] = count($fk_list);
+            $res['list'] = $fk_list;
         }elseif($key == 'fk'){
             $drp_id = $this->model->table('drp_shop')->field("id")->where(array("user_id"=>$_SESSION['user_id']))->getOne();
             $user_list = $this->model->table('drp_visiter')->where(array("drp_id"=>$drp_id))->select();
@@ -382,8 +400,14 @@ class SaleModel extends BaseModel {
                     $user_list[$key] = $this->get_drp($val['user_id']);
                 }
             }
-            $res['count'] = count($user_list);
-            $res['list'] = $user_list;
+            $fk_list = [];
+            foreach($user_list as $key=>$val){
+                if ($val['user_id']!=$_SESSION['user_id']){
+                    array_push($fk_list, $val);
+                }
+            }
+            $res['count'] = count($fk_list);
+            $res['list'] = $fk_list;
         }else{
             return false;
         }
@@ -480,6 +504,7 @@ class SaleModel extends BaseModel {
             return false;
         }
         $user_name = $this->model->table('users')->field("user_name")->where(array("user_id"=>$user_id))->getOne();
+
         $info = array();
         //新增获取用户头像，昵称
         $u_row = '';

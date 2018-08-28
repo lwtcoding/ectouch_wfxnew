@@ -5,7 +5,8 @@
 	<h3 class="box-flex"><!--<span>{$title}</span>-->我的会员</h3>
 </header>
 	<div id="box">
-		<!--{foreach from=$info.list item=li}-->	       		
+		<!--{foreach from=$info.list item=li}-->
+		<!--{if ($li.username || $li.time)}-->
 		<ul class="dis-box padding-all n-b-b n-bs-f n-user-box2">
 	    	<li class="box-flex">
 	    		<div class="user-cont-right-box">
@@ -14,6 +15,7 @@
 	    		</div>
 	    	</li>
 	    </ul>
+	    <!--{/if}-->
 		<!--{/foreach}-->
 	</div>
 </body>

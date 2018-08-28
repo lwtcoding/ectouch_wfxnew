@@ -75,7 +75,7 @@
 						<!-- {foreach from=$payment_list item=payment} -->
 						<div class="ect-radio">
 							<input name="payment" type="radio" id="payment_{$payment.pay_id}" value="{$payment.pay_id}" {if $order.pay_id eq $payment.pay_id}checked{/if} checked="true" isCod="{$payment.is_cod}" onclick="selectPayment(this)" {if $cod_disabled and $payment.is_cod eq "1"}disabled="true" {/if} style="vertical-align:middle">
-							<label for="payment_{$payment.pay_id}">{$payment.pay_name} [{$payment.format_pay_fee}]<i></i></label>
+							<label for="payment_{$payment.pay_id}">{$payment.pay_name} <span style="display:none;">[{$payment.format_pay_fee}]</span><i></i></label>
 						</div>
 						<!-- {/foreach} -->
 					</div>
@@ -88,7 +88,7 @@
 							<!-- {foreach from=$payment_list item=payment} -->
 							<li>
 								<input name="payment" type="radio" id="payment_{$payment.pay_id}" value="{$payment.pay_id}" {if $order.pay_id eq $payment.pay_id}checked{/if} isCod="{$payment.is_cod}" onclick="selectPayment(this)" {if $cod_disabled and $payment.is_cod eq "1"}disabled="true" {/if} style="vertical-align:middle">
-								<label for="payment_{$payment.pay_id}">{$payment.pay_name} [{$payment.format_pay_fee}]<i></i></label>
+								<label for="payment_{$payment.pay_id}">{$payment.pay_name} <span style="display:none;">[{$payment.format_pay_fee}]</span><i></i></label>
 							</li>
 							<!-- {/foreach} -->
 						</ul>

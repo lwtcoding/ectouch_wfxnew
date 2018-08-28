@@ -74,7 +74,7 @@
 			</div>
 		</div>
 	</a>
-	{if $is_not_wechat}
+
 	<a href="{:url('user/logout')}">
 		<div class="s-user-top">
 			<div class="dis-box s-user-top-1">
@@ -83,6 +83,7 @@
 			</div>
 		</div>
 	</a>
+	{if $is_not_wechat}
 	{/if}
 </section>
 </div>
