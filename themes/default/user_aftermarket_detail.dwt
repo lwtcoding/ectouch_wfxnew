@@ -132,16 +132,15 @@
     			</div>
     			<!--{/if}-->
 			</div>
-			<div class="m_msg J_Status show">
+			
+			<div class="m_msg J_Status show ect-padding-tb ect-margin-tb ect-padding-lr">
 				<div class="msg-item msg-lst" style="left: 0px; opacity: 1;">
-
-					<div class="filter-btn dis-box" style="position:relative">
+					<div class="two-btn dis-box" style="position:relative">
 						<!--{if $return.handler}-->
-						<div type="button" class="btn-cart n-but-ls box-flex n-iphone5-top1 j-goods-attr j-show-div">{$return.handler}</div>
+						<div type="button" class="btn-cart n-but-ls box-flex n-iphone5-top1 j-goods-attr j-show-div" style="margin-right: .6rem;">{$return.handler}</div>
 						<!--{/if}-->
 						<a href="{:url('user/aftermarket_done', array('rec_id'=>$this->_var['return']['rec_id']))}" type="button" class="btn-submit box-flex n-iphone5-top1 j-goods-attr j-show-div">{$lang.aftermarket_action}</a>
 					</div>
-
 				</div>
 			</div>
 
